@@ -1,6 +1,6 @@
-$ /home/seb/Developer/TSS-Lab-Proiect/main/.tools/jdk11/jdk-11.0.32.1+1/bin/javac -cp /home/seb/Developer/TSS-Lab-Proiect/main/14_armstrong/target/major-classes:/home/seb/Developer/TSS-Lab-Proiect/main/.tools/major/lib/major-rt.jar:/home/seb/Developer/TSS-Lab-Proiect/main/14_armstrong/target/mutation-study -d /home/seb/Developer/TSS-Lab-Proiect/main/14_armstrong/target/mutation-study /home/seb/Developer/TSS-Lab-Proiect/main/14_armstrong/scripts/MutationWitnessCheck.java
+$ /home/seb/Developer/TSS-Lab-Proiect/main/.tools/jdk11/jdk-11.0.32.1+1/bin/javac -cp /home/seb/Developer/TSS-Lab-NumereArmstrong/target/major-classes:/home/seb/Developer/TSS-Lab-Proiect/main/.tools/major/lib/major-rt.jar:/home/seb/Developer/TSS-Lab-NumereArmstrong/target/mutation-study -d /home/seb/Developer/TSS-Lab-NumereArmstrong/target/mutation-study /home/seb/Developer/TSS-Lab-NumereArmstrong/scripts/MutationWitnessCheck.java
 
-$ /home/seb/Developer/TSS-Lab-Proiect/main/.tools/jdk11/jdk-11.0.32.1+1/bin/java -cp /home/seb/Developer/TSS-Lab-Proiect/main/14_armstrong/target/major-classes:/home/seb/Developer/TSS-Lab-Proiect/main/.tools/major/lib/major-rt.jar:/home/seb/Developer/TSS-Lab-Proiect/main/14_armstrong/target/mutation-study MutationWitnessCheck
+$ /home/seb/Developer/TSS-Lab-Proiect/main/.tools/jdk11/jdk-11.0.32.1+1/bin/java -cp /home/seb/Developer/TSS-Lab-NumereArmstrong/target/major-classes:/home/seb/Developer/TSS-Lab-Proiect/main/.tools/major/lib/major-rt.jar:/home/seb/Developer/TSS-Lab-NumereArmstrong/target/mutation-study MutationWitnessCheck
 WITNESS 2 100 NU INVALID
 WITNESS 5 999 NU INVALID
 WITNESS 6 1000 INVALID NU

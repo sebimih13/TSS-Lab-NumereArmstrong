@@ -1,6 +1,6 @@
 """Validate PIT/Major artifacts and reproduce the numeric tables of chapter 8.
 
-Run after: python3 main/tools/run.py mutation --exercise 14_armstrong
+Run after: python3 scripts/run.py mutation
 No packages are downloaded. Java witness checks use the installed Major runtime.
 """
 from __future__ import annotations
@@ -14,8 +14,9 @@ import re
 import subprocess
 import xml.etree.ElementTree as ET
 
+from run import TOOLS, jdk11
+
 EXERCISE = Path(__file__).resolve().parents[1]
-MAIN = EXERCISE.parent
 OUT = EXERCISE / 'rapoarte/studiu_mutatie'
 SUITES = ['EpTest', 'BvaTest', 'CegTest', 'McdcTest']
 LABELS = ['EP', 'BVA', 'CEG', 'MC/DC']
@@ -138,8 +139,8 @@ def main():
             op_rows.append(row)
         table(name.lower()+'_operators', ['Operator', '$G$', 'EP', 'BVA', 'CEG', 'MC/DC'], op_rows)
     # Exercise the actual automatically generated Major mutants, without editing test suites.
-    jdk = next((MAIN / '.tools/jdk11').glob('*/bin/javac')).parents[1]
-    runtime = MAIN / '.tools/major/lib/major-rt.jar'
+    jdk = jdk11()
+    runtime = TOOLS / 'major/lib/major-rt.jar'
     binary = EXERCISE / 'target/major-classes'
     witness_binary = EXERCISE / 'target/mutation-study'
     witness_binary.mkdir(parents=True, exist_ok=True)

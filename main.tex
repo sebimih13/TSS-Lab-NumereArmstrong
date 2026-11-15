@@ -857,7 +857,7 @@ nouă selecție de teste.
 \subsubsection{Mediul și selecția codului analizat}
 PIT este utilizat prin interfața de linie de comandă, cu biblioteca
 \path{pitest-command-line-1.17.4.jar} și dependențele locale aferente.
-Scriptul \path{main/tools/run.py} lansează clasa
+Scriptul \path{scripts/run.py} lansează clasa
 \path{org.pitest.mutationtest.commandline.MutationCoverageReport}.
 Originalul și testele sunt compilate cu JDK 17 și opțiunea \texttt{--release 11},
 care produce clase compatibile cu Java 11. 
@@ -971,8 +971,8 @@ specific al uneltei.
 .tools/major/bin/major \
   --mml .tools/major/mml/all.mml.bin \
   --release 11 -g \
-  -d 14_armstrong/target/major-classes \
-  14_armstrong/src/main/java/ro/tss/armstrong/Main.java
+  -d target/major-classes \
+  src/main/java/ro/tss/armstrong/Main.java
 \end{lstlisting}
 
 Fișierul \path{all.mml.bin} este configurația compilată livrată cu

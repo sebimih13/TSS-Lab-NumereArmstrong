@@ -1,5 +1,5 @@
-$ /home/seb/Developer/TSS-Lab-Proiect/main/.tools/jdk11/jdk-11.0.32.1+1/bin/java -Xbootclasspath/a:/home/seb/Developer/TSS-Lab-Proiect/main/.tools/major/lib/major-rt.jar -jar /home/seb/Developer/TSS-Lab-Proiect/main/.tools/major/lib/ant/ant-launcher.jar -f /home/seb/Developer/TSS-Lab-Proiect/main/14_armstrong/rapoarte/major/BvaTest/build.xml
-Buildfile: /home/seb/Developer/TSS-Lab-Proiect/main/14_armstrong/rapoarte/major/BvaTest/build.xml
+$ /home/seb/Developer/TSS-Lab-Proiect/main/.tools/jdk11/jdk-11.0.32.1+1/bin/java -Xbootclasspath/a:/home/seb/Developer/TSS-Lab-Proiect/main/.tools/major/lib/major-rt.jar -jar /home/seb/Developer/TSS-Lab-Proiect/main/.tools/major/lib/ant/ant-launcher.jar -f /home/seb/Developer/TSS-Lab-NumereArmstrong/rapoarte/major/BvaTest/build.xml
+Buildfile: /home/seb/Developer/TSS-Lab-NumereArmstrong/rapoarte/major/BvaTest/build.xml
 
 mutation:
     [junit] MAJOR: Mutation analysis enabled
@@ -21,7 +21,7 @@ mutation:
     [junit] MAJOR: Run mutation analysis with 31 mutant(s) and 1 test(s).
     [junit] MAJOR: ------------------------------------------------------------
     [junit] MAJOR: [1;34m1/1 - ro.tss.armstrong.BoundaryValueAnalysis (6ms / 31):[0m
-    [junit] MAJOR: 2263 (30 / 31 / 31) -> AVG-RTPM: 73ms
+    [junit] MAJOR: 2264 (30 / 31 / 31) -> AVG-RTPM: 73ms
     [junit] MAJOR: Mutants killed (FAIL-EXC-TIME) / live: 30 (24-4-2) / 1
     [junit] MAJOR: ------------------------------------------------------------
     [junit] MAJOR: Summary:

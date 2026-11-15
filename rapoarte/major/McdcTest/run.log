@@ -1,5 +1,5 @@
-$ /home/seb/Developer/TSS-Lab-Proiect/main/.tools/jdk11/jdk-11.0.32.1+1/bin/java -Xbootclasspath/a:/home/seb/Developer/TSS-Lab-Proiect/main/.tools/major/lib/major-rt.jar -jar /home/seb/Developer/TSS-Lab-Proiect/main/.tools/major/lib/ant/ant-launcher.jar -f /home/seb/Developer/TSS-Lab-Proiect/main/14_armstrong/rapoarte/major/McdcTest/build.xml
-Buildfile: /home/seb/Developer/TSS-Lab-Proiect/main/14_armstrong/rapoarte/major/McdcTest/build.xml
+$ /home/seb/Developer/TSS-Lab-Proiect/main/.tools/jdk11/jdk-11.0.32.1+1/bin/java -Xbootclasspath/a:/home/seb/Developer/TSS-Lab-Proiect/main/.tools/major/lib/major-rt.jar -jar /home/seb/Developer/TSS-Lab-Proiect/main/.tools/major/lib/ant/ant-launcher.jar -f /home/seb/Developer/TSS-Lab-NumereArmstrong/rapoarte/major/McdcTest/build.xml
+Buildfile: /home/seb/Developer/TSS-Lab-NumereArmstrong/rapoarte/major/McdcTest/build.xml
 
 mutation:
     [junit] MAJOR: Mutation analysis enabled
@@ -20,8 +20,8 @@ mutation:
     [junit] MAJOR: ------------------------------------------------------------
     [junit] MAJOR: Run mutation analysis with 31 mutant(s) and 1 test(s).
     [junit] MAJOR: ------------------------------------------------------------
-    [junit] MAJOR: [1;34m1/1 - ro.tss.armstrong.ModifiedConditionDecisionCoverage (6ms / 31):[0m
-    [junit] MAJOR: 2259 (28 / 31 / 31) -> AVG-RTPM: 72ms
+    [junit] MAJOR: [1;34m1/1 - ro.tss.armstrong.ModifiedConditionDecisionCoverage (5ms / 31):[0m
+    [junit] MAJOR: 2260 (28 / 31 / 31) -> AVG-RTPM: 72ms
     [junit] MAJOR: Mutants killed (FAIL-EXC-TIME) / live: 28 (22-4-2) / 3
     [junit] MAJOR: ------------------------------------------------------------
     [junit] MAJOR: Summary:

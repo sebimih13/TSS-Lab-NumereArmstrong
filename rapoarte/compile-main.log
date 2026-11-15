@@ -1,1 +1,1 @@
-$ /usr/lib/jvm/java-17-temurin-jdk/bin/javac -encoding UTF-8 --release 11 -g -d /home/seb/Developer/TSS-Lab-Proiect/main/14_armstrong/target/classes /home/seb/Developer/TSS-Lab-Proiect/main/14_armstrong/src/main/java/ro/tss/armstrong/Main.java
+$ /usr/lib/jvm/java-17-temurin-jdk/bin/javac -encoding UTF-8 --release 11 -g -d /home/seb/Developer/TSS-Lab-NumereArmstrong/target/classes /home/seb/Developer/TSS-Lab-NumereArmstrong/src/main/java/ro/tss/armstrong/Main.java

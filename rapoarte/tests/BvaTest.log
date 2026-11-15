@@ -1,7 +1,7 @@
-$ /usr/lib/jvm/java-17-temurin-jdk/bin/java -cp /home/seb/Developer/TSS-Lab-Proiect/main/14_armstrong/target/classes:/home/seb/Developer/TSS-Lab-Proiect/main/14_armstrong/target/test-classes:/home/seb/Developer/TSS-Lab-Proiect/main/.tools/junit-4.13.2.jar:/home/seb/Developer/TSS-Lab-Proiect/main/.tools/hamcrest-core-1.3.jar org.junit.runner.JUnitCore ro.tss.armstrong.BoundaryValueAnalysis
+$ /usr/lib/jvm/java-17-temurin-jdk/bin/java -cp /home/seb/Developer/TSS-Lab-NumereArmstrong/target/classes:/home/seb/Developer/TSS-Lab-NumereArmstrong/target/test-classes:/home/seb/Developer/TSS-Lab-Proiect/main/.tools/junit-4.13.2.jar:/home/seb/Developer/TSS-Lab-Proiect/main/.tools/hamcrest-core-1.3.jar org.junit.runner.JUnitCore ro.tss.armstrong.BoundaryValueAnalysis
 JUnit version 4.13.2
 ................
-Time: 0.003
+Time: 0.002
 
 OK (16 tests)
 

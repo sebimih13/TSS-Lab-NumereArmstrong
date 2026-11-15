@@ -1,52 +1,56 @@
 # TSS-Lab-NumereArmstrong
-## Requirements înainte de rulare
 
-- Bash
-- Python 3.10+; numai biblioteca standard, fără pachete `pip`.
-- JDK 17 cu `java` în `PATH`; runnerul folosește `javac` din același JDK și compilează cu `--release 11`.
-- Graphviz (`dot` în `PATH`), folosit la recompilarea grafului.
-- Fișiere existente în `main/.tools/`:
-  - `junit-4.13.2.jar`
-  - `hamcrest-core-1.3.jar`
-  - `jacoco-agent-0.8.13.jar`
-  - `jacoco-cli-0.8.13.jar`
-  - `pitest-1.17.4.jar`
-  - `pitest-entry-1.17.4.jar`
-  - `pitest-command-line-1.17.4.jar`
-  - `commons-text-1.12.0.jar`
-  - `commons-lang3-3.14.0.jar`
-- Major 3.0.1 instalat în `main/.tools/major/`, inclusiv runtime-ul și Ant.
-- JDK 11 instalat în `main/.tools/jdk11/*/`, necesar pentru Major.
-- Sursele din `src/main/java/`, testele din `src/test/java/` și fișierul `src/test/resources/regression.tsv`.
+Comenzile se rulează din rădăcina acestui repository. Numele directorului nu influențează pachetul Java sau selecția suitelor.
 
-## Comenzi folosite
+## Cerințe
+
+- Bash și Python 3.10+ (numai biblioteca standard).
+- JDK 17 cu `java` în `PATH`; compilarea folosește `--release 11`.
+- Pentru PDF: TeX Live cu pachetele din `main.tex` și `latexmk`.
+- Pentru Maven: `mvn` și acces la Maven Central la prima rulare.
+- Uneltele de testare în `.tools/` sau într-un director indicat prin `TSS_TOOLS`:
+  - `junit-4.13.2.jar`, `hamcrest-core-1.3.jar`
+  - `jacoco-agent-0.8.13.jar`, `jacoco-cli-0.8.13.jar`
+  - `pitest-1.17.4.jar`, `pitest-entry-1.17.4.jar`, `pitest-command-line-1.17.4.jar`
+  - `commons-text-1.12.0.jar`, `commons-lang3-3.14.0.jar`
+  - Major 3.0.1 în `major/`, inclusiv runtime-ul și Ant.
+  - JDK 11 în `jdk11/*/`, necesar pentru Major; alternativ, `TSS_JDK11` indică rădăcina JDK-ului.
+
+Uneltele binare nu sunt incluse în Git. Poți reutiliza instalarea existentă din proiectul inițial:
 
 ```bash
-cd /home/seb/Developer/TSS-Lab-Proiect
-
-python3 --version
-java -version
-javac -version
-dot -V
-
-# Recompilare și rulare JUnit: EP, BVA, CEG, MC/DC, RegressionTest.
-# Rezultate: main/14_armstrong/rapoarte/tests/ și rapoarte/tests.json.
-python3 main/tools/run.py test --exercise 14_armstrong
-
-# Recompilare, rulare JUnit cu agentul JaCoCo și generare HTML/XML.
-# Fiecare suită rulează într-un JVM separat, cu append=false.
-# Rezultate: main/14_armstrong/rapoarte/coverage/ și rapoarte/coverage.json.
-python3 main/tools/run.py coverage --exercise 14_armstrong
-
-# Toate rapoartele: JUnit, JaCoCo, mutanți manuali, PIT și Major.
-python3 main/tools/run.py all --exercise 14_armstrong
-
-# Rerulare separată PIT și Major.
-python3 main/tools/run.py mutation --exercise 14_armstrong
-
-# Validare PIT/Major, recalculare tabele LaTeX și verificare martori Java.
-python3 main/14_armstrong/scripts/analiza_mutatiilor.py
-
-# Regenerare REZULTATE.md și rapoarte/rezumat.json doar pentru Armstrong.
-PYTHONPATH=main/tools python3 -c 'import report; report.main({"14_armstrong"})'
+export TSS_TOOLS=/home/seb/Developer/TSS-Lab-Proiect/main/.tools
 ```
+
+## Generare
+
+```bash
+# JUnit, JaCoCo, mutanți manuali, PIT, Major, rezumat și analiza mutațiilor.
+python3 scripts/run.py all
+
+# Rulări separate.
+python3 scripts/run.py test
+python3 scripts/run.py coverage
+python3 scripts/run.py manual
+python3 scripts/run.py mutation
+# Sunt disponibile și acțiunile pit și major.
+
+# Refacerea rezumatului din rapoartele deja generate.
+python3 scripts/run.py summary
+
+# Validare PIT/Major, tabele LaTeX și martori Java.
+python3 scripts/analiza_mutatiilor.py
+
+# PDF, inclusiv graful TikZ și tabelele generate.
+latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
+
+# Alternativă pentru testele și raportul JaCoCo prin Maven.
+mvn test
+
+# Verificarea runnerului fără unelte Java.
+python3 -m unittest discover -s scripts -p 'test_*.py'
+```
+
+Rezultatele se scriu în `rapoarte/`: `tests/`, `coverage/` (HTML/XML), `manual/`, `pit/` (HTML/XML), `major/`, `studiu_mutatie/`, fișierele JSON și `rezumat.json`. PDF-ul se scrie în `main.pdf`. Imaginile de acoperire din `figuri/` sunt capturi statice; rapoartele HTML actualizate sunt în `rapoarte/coverage/`.
+
+PIT folosește socket-uri locale pentru comunicarea cu procesele JVM; mediul de execuție trebuie să le permită.

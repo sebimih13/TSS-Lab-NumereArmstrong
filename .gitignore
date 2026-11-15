@@ -7,3 +7,7 @@ target/
 *.log
 *.out
 *.synctex.gz
+
+# Local testing tools
+.tools/
+__pycache__/

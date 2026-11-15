@@ -1,1 +1,1 @@
-$ /usr/lib/jvm/java-17-temurin-jdk/bin/javac --release 11 -d /home/seb/Developer/TSS-Lab-Proiect/main/14_armstrong/target/manual/echivalent /home/seb/Developer/TSS-Lab-Proiect/main/14_armstrong/mutanti/echivalent/Main.java
+$ /usr/lib/jvm/java-17-temurin-jdk/bin/javac --release 11 -d /home/seb/Developer/TSS-Lab-NumereArmstrong/target/manual/echivalent /home/seb/Developer/TSS-Lab-NumereArmstrong/mutanti/echivalent/Main.java
