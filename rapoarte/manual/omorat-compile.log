@@ -1,0 +1,1 @@
+$ /usr/lib/jvm/java-17-temurin-jdk/bin/javac --release 11 -d /home/seb/Developer/TSS-Lab-Proiect/main/14_armstrong/target/manual/omorat /home/seb/Developer/TSS-Lab-Proiect/main/14_armstrong/mutanti/omorat/Main.java

@@ -1,0 +1,112 @@
+{
+  "EpTest": {
+    "INSTRUCTION": {
+      "covered": 38,
+      "missed": 0
+    },
+    "BRANCH": {
+      "covered": 8,
+      "missed": 0
+    },
+    "LINE": {
+      "covered": 12,
+      "missed": 0
+    },
+    "COMPLEXITY": {
+      "covered": 5,
+      "missed": 0
+    },
+    "METHOD": {
+      "covered": 1,
+      "missed": 0
+    }
+  },
+  "BvaTest": {
+    "INSTRUCTION": {
+      "covered": 38,
+      "missed": 0
+    },
+    "BRANCH": {
+      "covered": 8,
+      "missed": 0
+    },
+    "LINE": {
+      "covered": 12,
+      "missed": 0
+    },
+    "COMPLEXITY": {
+      "covered": 5,
+      "missed": 0
+    },
+    "METHOD": {
+      "covered": 1,
+      "missed": 0
+    }
+  },
+  "CegTest": {
+    "INSTRUCTION": {
+      "covered": 38,
+      "missed": 0
+    },
+    "BRANCH": {
+      "covered": 7,
+      "missed": 1
+    },
+    "LINE": {
+      "covered": 12,
+      "missed": 0
+    },
+    "COMPLEXITY": {
+      "covered": 4,
+      "missed": 1
+    },
+    "METHOD": {
+      "covered": 1,
+      "missed": 0
+    }
+  },
+  "McdcTest": {
+    "INSTRUCTION": {
+      "covered": 38,
+      "missed": 0
+    },
+    "BRANCH": {
+      "covered": 8,
+      "missed": 0
+    },
+    "LINE": {
+      "covered": 12,
+      "missed": 0
+    },
+    "COMPLEXITY": {
+      "covered": 5,
+      "missed": 0
+    },
+    "METHOD": {
+      "covered": 1,
+      "missed": 0
+    }
+  },
+  "RegressionTest": {
+    "INSTRUCTION": {
+      "covered": 38,
+      "missed": 0
+    },
+    "BRANCH": {
+      "covered": 8,
+      "missed": 0
+    },
+    "LINE": {
+      "covered": 12,
+      "missed": 0
+    },
+    "COMPLEXITY": {
+      "covered": 5,
+      "missed": 0
+    },
+    "METHOD": {
+      "covered": 1,
+      "missed": 0
+    }
+  }
+}

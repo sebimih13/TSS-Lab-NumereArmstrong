@@ -1,0 +1,83 @@
+14_armstrong all
+Traceback (most recent call last):
+  File "/home/seb/Developer/TSS-Lab-Proiect/main/tools/run.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/seb/Developer/TSS-Lab-Proiect/main/tools/run.py", line 189, in main
+    if action in ['mutation','pit','all']:pit(folder)
+                                          ~~~^^^^^^^^
+  File "/home/seb/Developer/TSS-Lab-Proiect/main/tools/run.py", line 134, in pit
+    execute([java_home()/'bin/java','-cp',launcher,'org.pitest.mutationtest.commandline.MutationCoverageReport',
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+             '--reportDir',p,'--sourceDirs',folder/'src/main/java','--targetClasses',class_name(folder,main_class(folder)),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+             '--targetTests',class_name(folder,suite),'--classPath',','.join(map(str,[folder/'target/classes',folder/'target/test-classes',*deps()])),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+             '--mutableCodePaths',folder/'target/classes','--excludedMethods','<init>','--outputFormats','XML,HTML',
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+             '--timestampedReports','false','--threads','2','--timeoutConst','1000','--jvmPath',java_home()/'bin/java'],p/'run.log')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/seb/Developer/TSS-Lab-Proiect/main/tools/run.py", line 26, in execute
+    raise RuntimeError(f'Cod {proc.returncode}, așteptat {expected}: {log}\n{proc.stdout[-3500:]}')
+RuntimeError: Cod 1, așteptat 0: /home/seb/Developer/TSS-Lab-Proiect/main/14_armstrong/rapoarte/pit/EpTest/run.log
+8:12:50 PM PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+8:12:50 PM PIT >> INFO : Created 1 mutation test units in pre scan
+Exception in thread "main" org.pitest.util.PitError: Operation not permitted
+
+Please copy and paste the information and the complete stacktrace below when reporting an issue
+VM : OpenJDK 64-Bit Server VM
+Vendor : Eclipse Adoptium
+Version : 17.0.21+9
+Uptime : 170
+Input -> 
+BootClassPathSupported : false
+
+
+Please copy and paste the information and the complete stacktrace below when reporting an issue
+VM : OpenJDK 64-Bit Server VM
+Vendor : Eclipse Adoptium
+Version : 17.0.21+9
+Uptime : 170
+Input -> 
+BootClassPathSupported : false
+
+	at org.pitest.util.Unchecked.translateCheckedException(Unchecked.java:20)
+	at org.pitest.coverage.execute.DefaultCoverageGenerator.calculateCoverage(DefaultCoverageGenerator.java:118)
+	at org.pitest.coverage.execute.DefaultCoverageGenerator.calculateCoverage(DefaultCoverageGenerator.java:53)
+	at org.pitest.mutationtest.tooling.MutationCoverage.runAnalysis(MutationCoverage.java:158)
+	at org.pitest.mutationtest.tooling.MutationCoverage.runReport(MutationCoverage.java:145)
+	at org.pitest.mutationtest.tooling.EntryPoint.execute(EntryPoint.java:138)
+	at org.pitest.mutationtest.tooling.EntryPoint.execute(EntryPoint.java:64)
+	at org.pitest.mutationtest.commandline.MutationCoverageReport.runReport(MutationCoverageReport.java:98)
+	at org.pitest.mutationtest.commandline.MutationCoverageReport.main(MutationCoverageReport.java:45)
+Caused by: org.pitest.util.PitError: Operation not permitted
+
+Please copy and paste the information and the complete stacktrace below when reporting an issue
+VM : OpenJDK 64-Bit Server VM
+Vendor : Eclipse Adoptium
+Version : 17.0.21+9
+Uptime : 170
+Input -> 
+BootClassPathSupported : false
+
+	at org.pitest.util.Unchecked.translateCheckedException(Unchecked.java:20)
+	at org.pitest.util.SocketFinder.getNextAvailableServerSocket(SocketFinder.java:26)
+	at org.pitest.coverage.execute.DefaultCoverageGenerator.gatherCoverageData(DefaultCoverageGenerator.java:137)
+	at org.pitest.coverage.execute.DefaultCoverageGenerator.calculateCoverage(DefaultCoverageGenerator.java:101)
+	... 7 more
+Caused by: java.net.SocketException: Operation not permitted
+	at java.base/java.net.ServerSocket.createImpl(ServerSocket.java:320)
+	at java.base/java.net.ServerSocket.getImpl(ServerSocket.java:294)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:388)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:274)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:167)
+	at org.pitest.util.SocketFinder.getNextAvailableServerSocket(SocketFinder.java:24)
+	... 9 more
+
+
+Reluare după blocarea socket-urilor locale PIT în sandbox:
+$ python3 main/tools/run.py mutation --exercise 14_armstrong
+14_armstrong mutation
+14_armstrong OK
+
+JUnit, JaCoCo și mutanții manuali au trecut în prima rulare; PIT și Major au trecut la reluare.

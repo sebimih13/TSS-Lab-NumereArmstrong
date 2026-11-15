@@ -1,0 +1,57 @@
+{
+  "EpTest": {
+    "statuses": {
+      "SURVIVED": 2,
+      "TIMED_OUT": 1,
+      "KILLED": 12
+    },
+    "operators": {
+      "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 3,
+      "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 5,
+      "org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator": 4,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 3
+    },
+    "total": 15
+  },
+  "BvaTest": {
+    "statuses": {
+      "KILLED": 14,
+      "TIMED_OUT": 1
+    },
+    "operators": {
+      "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 3,
+      "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 5,
+      "org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator": 4,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 3
+    },
+    "total": 15
+  },
+  "CegTest": {
+    "statuses": {
+      "KILLED": 13,
+      "SURVIVED": 1,
+      "TIMED_OUT": 1
+    },
+    "operators": {
+      "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 3,
+      "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 5,
+      "org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator": 4,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 3
+    },
+    "total": 15
+  },
+  "McdcTest": {
+    "statuses": {
+      "KILLED": 13,
+      "SURVIVED": 1,
+      "TIMED_OUT": 1
+    },
+    "operators": {
+      "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 3,
+      "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 5,
+      "org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator": 4,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 3
+    },
+    "total": 15
+  }
+}

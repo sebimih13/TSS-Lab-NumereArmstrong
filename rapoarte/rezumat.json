@@ -1,0 +1,226 @@
+{
+  "exercise": "14_armstrong",
+  "tests": {
+    "EpTest": {
+      "tests": 4,
+      "passed": true
+    },
+    "BvaTest": {
+      "tests": 16,
+      "passed": true
+    },
+    "CegTest": {
+      "tests": 3,
+      "passed": true
+    },
+    "McdcTest": {
+      "tests": 4,
+      "passed": true
+    },
+    "RegressionTest": {
+      "tests": 1,
+      "passed": true
+    }
+  },
+  "regression_inputs": 902,
+  "coverage": {
+    "EpTest": {
+      "INSTRUCTION": {
+        "covered": 38,
+        "missed": 0
+      },
+      "BRANCH": {
+        "covered": 8,
+        "missed": 0
+      },
+      "LINE": {
+        "covered": 12,
+        "missed": 0
+      },
+      "COMPLEXITY": {
+        "covered": 5,
+        "missed": 0
+      },
+      "METHOD": {
+        "covered": 1,
+        "missed": 0
+      }
+    },
+    "BvaTest": {
+      "INSTRUCTION": {
+        "covered": 38,
+        "missed": 0
+      },
+      "BRANCH": {
+        "covered": 8,
+        "missed": 0
+      },
+      "LINE": {
+        "covered": 12,
+        "missed": 0
+      },
+      "COMPLEXITY": {
+        "covered": 5,
+        "missed": 0
+      },
+      "METHOD": {
+        "covered": 1,
+        "missed": 0
+      }
+    },
+    "CegTest": {
+      "INSTRUCTION": {
+        "covered": 38,
+        "missed": 0
+      },
+      "BRANCH": {
+        "covered": 7,
+        "missed": 1
+      },
+      "LINE": {
+        "covered": 12,
+        "missed": 0
+      },
+      "COMPLEXITY": {
+        "covered": 4,
+        "missed": 1
+      },
+      "METHOD": {
+        "covered": 1,
+        "missed": 0
+      }
+    },
+    "McdcTest": {
+      "INSTRUCTION": {
+        "covered": 38,
+        "missed": 0
+      },
+      "BRANCH": {
+        "covered": 8,
+        "missed": 0
+      },
+      "LINE": {
+        "covered": 12,
+        "missed": 0
+      },
+      "COMPLEXITY": {
+        "covered": 5,
+        "missed": 0
+      },
+      "METHOD": {
+        "covered": 1,
+        "missed": 0
+      }
+    },
+    "RegressionTest": {
+      "INSTRUCTION": {
+        "covered": 38,
+        "missed": 0
+      },
+      "BRANCH": {
+        "covered": 8,
+        "missed": 0
+      },
+      "LINE": {
+        "covered": 12,
+        "missed": 0
+      },
+      "COMPLEXITY": {
+        "covered": 5,
+        "missed": 0
+      },
+      "METHOD": {
+        "covered": 1,
+        "missed": 0
+      }
+    }
+  },
+  "mutation": {
+    "PIT": {
+      "EpTest": {
+        "killed": 12,
+        "denominator": 14,
+        "percent": "85.7%",
+        "statuses": {
+          "SURVIVED": 2,
+          "TIMED_OUT": 1,
+          "KILLED": 12
+        }
+      },
+      "BvaTest": {
+        "killed": 14,
+        "denominator": 14,
+        "percent": "100.0%",
+        "statuses": {
+          "KILLED": 14,
+          "TIMED_OUT": 1
+        }
+      },
+      "CegTest": {
+        "killed": 13,
+        "denominator": 14,
+        "percent": "92.9%",
+        "statuses": {
+          "KILLED": 13,
+          "SURVIVED": 1,
+          "TIMED_OUT": 1
+        }
+      },
+      "McdcTest": {
+        "killed": 13,
+        "denominator": 14,
+        "percent": "92.9%",
+        "statuses": {
+          "KILLED": 13,
+          "SURVIVED": 1,
+          "TIMED_OUT": 1
+        }
+      }
+    },
+    "Major": {
+      "EpTest": {
+        "killed": 25,
+        "denominator": 29,
+        "percent": "86.2%",
+        "statuses": {
+          "KILLED": 25,
+          "SURVIVED": 4,
+          "TIMED_OUT": 2
+        }
+      },
+      "BvaTest": {
+        "killed": 28,
+        "denominator": 29,
+        "percent": "96.6%",
+        "statuses": {
+          "KILLED": 24,
+          "SURVIVED": 1,
+          "TIMED_OUT": 2,
+          "KILLED_EXCEPTION": 4
+        }
+      },
+      "CegTest": {
+        "killed": 24,
+        "denominator": 29,
+        "percent": "82.8%",
+        "statuses": {
+          "KILLED": 20,
+          "SURVIVED": 5,
+          "TIMED_OUT": 2,
+          "KILLED_EXCEPTION": 4
+        }
+      },
+      "McdcTest": {
+        "killed": 26,
+        "denominator": 29,
+        "percent": "89.7%",
+        "statuses": {
+          "KILLED": 22,
+          "SURVIVED": 3,
+          "TIMED_OUT": 2,
+          "KILLED_EXCEPTION": 4
+        }
+      }
+    }
+  }
+}

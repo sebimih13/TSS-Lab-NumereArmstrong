@@ -1,0 +1,31 @@
+1:ROR:<(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):5:103:n < 100 |==> n != 100
+2:ROR:<(int,int):<=(int,int):ro.tss.armstrong.Main@evaluate(int):5:103:n < 100 |==> n <= 100
+3:ROR:<(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):5:105:n < 100 |==> false
+4:ROR:>(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):5:114:n > 999 |==> n != 999
+5:ROR:>(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):5:114:n > 999 |==> n >= 999
+6:ROR:>(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):5:116:n > 999 |==> false
+7:COR:||(boolean,boolean):LHS(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:103:n < 100 || n > 999 |==> n < 100
+8:COR:||(boolean,boolean):RHS(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:114:n < 100 || n > 999 |==> n > 999
+9:COR:||(boolean,boolean):TRUE(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:111:n < 100 || n > 999 |==> true
+10:STD:<RETURN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):6:138:return "INVALID"; |==> <NO-OP>
+11:ROR:>(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):10:225:rest > 0 |==> rest != 0
+12:ROR:>(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):10:225:rest > 0 |==> rest >= 0
+13:ROR:>(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):10:230:rest > 0 |==> false
+14:AOR:%(int,int):*(int,int):ro.tss.armstrong.Main@evaluate(int):11:261:rest % 10 |==> rest * 10
+15:AOR:%(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):11:261:rest % 10 |==> rest + 10
+16:AOR:%(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):11:261:rest % 10 |==> rest - 10
+17:AOR:%(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):11:261:rest % 10 |==> rest / 10
+18:AOR:*(int,int):%(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra |==> cifra % cifra
+19:AOR:*(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra |==> cifra + cifra
+20:AOR:*(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra |==> cifra - cifra
+21:AOR:*(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra |==> cifra / cifra
+22:AOR:*(int,int):%(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra * cifra |==> cifra * cifra % cifra
+23:AOR:*(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra * cifra |==> cifra * cifra + cifra
+24:AOR:*(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra * cifra |==> cifra * cifra - cifra
+25:AOR:*(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra * cifra |==> cifra * cifra / cifra
+26:STD:<ASSIGN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):12:284:suma += cifra * cifra * cifra; |==> <NO-OP>
+27:STD:<ASSIGN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):13:327:rest /= 10; |==> <NO-OP>
+28:ROR:==(int,int):<=(int,int):ro.tss.armstrong.Main@evaluate(int):15:361:suma == n |==> suma <= n
+29:ROR:==(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):15:361:suma == n |==> suma >= n
+30:ROR:==(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):15:366:suma == n |==> false
+31:STD:<RETURN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):16:386:return "DA"; |==> <NO-OP>

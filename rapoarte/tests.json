@@ -1,0 +1,22 @@
+{
+  "EpTest": {
+    "tests": 4,
+    "passed": true
+  },
+  "BvaTest": {
+    "tests": 16,
+    "passed": true
+  },
+  "CegTest": {
+    "tests": 3,
+    "passed": true
+  },
+  "McdcTest": {
+    "tests": 4,
+    "passed": true
+  },
+  "RegressionTest": {
+    "tests": 1,
+    "passed": true
+  }
+}

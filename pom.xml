@@ -1,0 +1,11 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>ro.tss</groupId>
+        <artifactId>exercitii</artifactId>
+        <version>1.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <artifactId>14_armstrong</artifactId>
+    <properties><target.class>ro.tss.armstrong.Main</target.class><suite>*</suite></properties>
+</project>

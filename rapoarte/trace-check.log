@@ -1,0 +1,2 @@
+$ /usr/lib/jvm/java-17-temurin-jdk/bin/java -cp /home/seb/Developer/TSS-Lab-Proiect/main/14_armstrong/target/trace ro.tss.armstrong.TraceCheck
+PATHS_OK 19

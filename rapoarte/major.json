@@ -1,0 +1,58 @@
+{
+  "EpTest": {
+    "summary": [
+      {
+        "MutantsGenerated": "31",
+        "MutantsRetained": "31",
+        "MutantsCovered": "31",
+        "MutantsKilled": "27",
+        "MutantsLive": "4",
+        "RuntimePreprocSeconds": "0.03",
+        "RuntimeAnalysisSeconds": "2.26"
+      }
+    ],
+    "details_count": 31
+  },
+  "BvaTest": {
+    "summary": [
+      {
+        "MutantsGenerated": "31",
+        "MutantsRetained": "31",
+        "MutantsCovered": "31",
+        "MutantsKilled": "30",
+        "MutantsLive": "1",
+        "RuntimePreprocSeconds": "0.03",
+        "RuntimeAnalysisSeconds": "2.26"
+      }
+    ],
+    "details_count": 31
+  },
+  "CegTest": {
+    "summary": [
+      {
+        "MutantsGenerated": "31",
+        "MutantsRetained": "31",
+        "MutantsCovered": "31",
+        "MutantsKilled": "26",
+        "MutantsLive": "5",
+        "RuntimePreprocSeconds": "0.03",
+        "RuntimeAnalysisSeconds": "2.26"
+      }
+    ],
+    "details_count": 31
+  },
+  "McdcTest": {
+    "summary": [
+      {
+        "MutantsGenerated": "31",
+        "MutantsRetained": "31",
+        "MutantsCovered": "31",
+        "MutantsKilled": "28",
+        "MutantsLive": "3",
+        "RuntimePreprocSeconds": "0.03",
+        "RuntimeAnalysisSeconds": "2.26"
+      }
+    ],
+    "details_count": 31
+  }
+}

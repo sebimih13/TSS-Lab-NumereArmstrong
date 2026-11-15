@@ -1,0 +1,7 @@
+$ /usr/lib/jvm/java-17-temurin-jdk/bin/java -javaagent:/home/seb/Developer/TSS-Lab-Proiect/main/.tools/jacoco-agent-0.8.13.jar=destfile=/home/seb/Developer/TSS-Lab-Proiect/main/14_armstrong/rapoarte/coverage/EpTest/jacoco.exec,append=false -cp /home/seb/Developer/TSS-Lab-Proiect/main/14_armstrong/target/classes:/home/seb/Developer/TSS-Lab-Proiect/main/14_armstrong/target/test-classes:/home/seb/Developer/TSS-Lab-Proiect/main/.tools/junit-4.13.2.jar:/home/seb/Developer/TSS-Lab-Proiect/main/.tools/hamcrest-core-1.3.jar org.junit.runner.JUnitCore ro.tss.armstrong.EquivalncePartitioning
+JUnit version 4.13.2
+....
+Time: 0.004
+
+OK (4 tests)
+
