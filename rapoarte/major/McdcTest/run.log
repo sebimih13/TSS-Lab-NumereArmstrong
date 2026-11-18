@@ -20,8 +20,8 @@ mutation:
     [junit] MAJOR: ------------------------------------------------------------
     [junit] MAJOR: Run mutation analysis with 31 mutant(s) and 1 test(s).
     [junit] MAJOR: ------------------------------------------------------------
-    [junit] MAJOR: [1;34m1/1 - ro.tss.armstrong.ModifiedConditionDecisionCoverage (6ms / 31):[0m
-    [junit] MAJOR: 2297 (28 / 31 / 31) -> AVG-RTPM: 74ms
+    [junit] MAJOR: [1;34m1/1 - ro.tss.armstrong.ModifiedConditionDecisionCoverage (5ms / 31):[0m
+    [junit] MAJOR: 2294 (28 / 31 / 31) -> AVG-RTPM: 74ms
     [junit] MAJOR: Mutants killed (FAIL-EXC-TIME) / live: 28 (22-4-2) / 3
     [junit] MAJOR: ------------------------------------------------------------
     [junit] MAJOR: Summary:

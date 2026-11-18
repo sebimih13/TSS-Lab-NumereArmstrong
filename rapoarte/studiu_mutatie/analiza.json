@@ -55,7 +55,7 @@
             32
           ],
           "description": "Replaced integer modulus with multiplication",
-          "killing_test": "ro.tss.armstrong.EquivalncePartitioning.EP01(ro.tss.armstrong.EquivalncePartitioning)"
+          "killing_test": "ro.tss.armstrong.EquivalencePartitioning.EP01(ro.tss.armstrong.EquivalencePartitioning)"
         },
         {
           "status": "KILLED",
@@ -65,7 +65,7 @@
             39
           ],
           "description": "Replaced integer multiplication with division",
-          "killing_test": "ro.tss.armstrong.EquivalncePartitioning.EP01(ro.tss.armstrong.EquivalncePartitioning)"
+          "killing_test": "ro.tss.armstrong.EquivalencePartitioning.EP01(ro.tss.armstrong.EquivalencePartitioning)"
         },
         {
           "status": "KILLED",
@@ -75,7 +75,7 @@
             41
           ],
           "description": "Replaced integer multiplication with division",
-          "killing_test": "ro.tss.armstrong.EquivalncePartitioning.EP01(ro.tss.armstrong.EquivalncePartitioning)"
+          "killing_test": "ro.tss.armstrong.EquivalencePartitioning.EP01(ro.tss.armstrong.EquivalencePartitioning)"
         },
         {
           "status": "KILLED",
@@ -85,7 +85,7 @@
             42
           ],
           "description": "Replaced integer addition with subtraction",
-          "killing_test": "ro.tss.armstrong.EquivalncePartitioning.EP01(ro.tss.armstrong.EquivalncePartitioning)"
+          "killing_test": "ro.tss.armstrong.EquivalencePartitioning.EP01(ro.tss.armstrong.EquivalencePartitioning)"
         },
         {
           "status": "KILLED",
@@ -95,7 +95,7 @@
             48
           ],
           "description": "Replaced integer division with multiplication",
-          "killing_test": "ro.tss.armstrong.EquivalncePartitioning.EP01(ro.tss.armstrong.EquivalncePartitioning)"
+          "killing_test": "ro.tss.armstrong.EquivalencePartitioning.EP01(ro.tss.armstrong.EquivalencePartitioning)"
         },
         {
           "status": "KILLED",
@@ -105,7 +105,7 @@
             5
           ],
           "description": "negated conditional",
-          "killing_test": "ro.tss.armstrong.EquivalncePartitioning.EP02(ro.tss.armstrong.EquivalncePartitioning)"
+          "killing_test": "ro.tss.armstrong.EquivalencePartitioning.EP03(ro.tss.armstrong.EquivalencePartitioning)"
         },
         {
           "status": "KILLED",
@@ -115,7 +115,7 @@
             8
           ],
           "description": "negated conditional",
-          "killing_test": "ro.tss.armstrong.EquivalncePartitioning.EP02(ro.tss.armstrong.EquivalncePartitioning)"
+          "killing_test": "ro.tss.armstrong.EquivalencePartitioning.EP04(ro.tss.armstrong.EquivalencePartitioning)"
         },
         {
           "status": "KILLED",
@@ -125,7 +125,7 @@
             27
           ],
           "description": "negated conditional",
-          "killing_test": "ro.tss.armstrong.EquivalncePartitioning.EP01(ro.tss.armstrong.EquivalncePartitioning)"
+          "killing_test": "ro.tss.armstrong.EquivalencePartitioning.EP01(ro.tss.armstrong.EquivalencePartitioning)"
         },
         {
           "status": "KILLED",
@@ -135,7 +135,7 @@
             58
           ],
           "description": "negated conditional",
-          "killing_test": "ro.tss.armstrong.EquivalncePartitioning.EP02(ro.tss.armstrong.EquivalncePartitioning)"
+          "killing_test": "ro.tss.armstrong.EquivalencePartitioning.EP02(ro.tss.armstrong.EquivalencePartitioning)"
         },
         {
           "status": "KILLED",
@@ -145,7 +145,7 @@
             13
           ],
           "description": "replaced return value with \"\" for ro/tss/armstrong/Main::evaluate",
-          "killing_test": "ro.tss.armstrong.EquivalncePartitioning.EP03(ro.tss.armstrong.EquivalncePartitioning)"
+          "killing_test": "ro.tss.armstrong.EquivalencePartitioning.EP03(ro.tss.armstrong.EquivalencePartitioning)"
         },
         {
           "status": "KILLED",
@@ -155,7 +155,7 @@
             62
           ],
           "description": "replaced return value with \"\" for ro/tss/armstrong/Main::evaluate",
-          "killing_test": "ro.tss.armstrong.EquivalncePartitioning.EP01(ro.tss.armstrong.EquivalncePartitioning)"
+          "killing_test": "ro.tss.armstrong.EquivalencePartitioning.EP01(ro.tss.armstrong.EquivalencePartitioning)"
         },
         {
           "status": "KILLED",
@@ -165,7 +165,7 @@
             67
           ],
           "description": "replaced return value with \"\" for ro/tss/armstrong/Main::evaluate",
-          "killing_test": "ro.tss.armstrong.EquivalncePartitioning.EP02(ro.tss.armstrong.EquivalncePartitioning)"
+          "killing_test": "ro.tss.armstrong.EquivalencePartitioning.EP02(ro.tss.armstrong.EquivalencePartitioning)"
         }
       ]
     },
@@ -200,7 +200,7 @@
             8
           ],
           "description": "changed conditional boundary",
-          "killing_test": "ro.tss.armstrong.BoundaryValueAnalysis.BVA15(ro.tss.armstrong.BoundaryValueAnalysis)"
+          "killing_test": "ro.tss.armstrong.BoundaryValueAnalysis.BVA13(ro.tss.armstrong.BoundaryValueAnalysis)"
         },
         {
           "status": "TIMED_OUT",
@@ -220,7 +220,7 @@
             32
           ],
           "description": "Replaced integer modulus with multiplication",
-          "killing_test": "ro.tss.armstrong.BoundaryValueAnalysis.BVA09(ro.tss.armstrong.BoundaryValueAnalysis)"
+          "killing_test": "ro.tss.armstrong.BoundaryValueAnalysis.BVA04(ro.tss.armstrong.BoundaryValueAnalysis)"
         },
         {
           "status": "KILLED",
@@ -230,7 +230,7 @@
             39
           ],
           "description": "Replaced integer multiplication with division",
-          "killing_test": "ro.tss.armstrong.BoundaryValueAnalysis.BVA09(ro.tss.armstrong.BoundaryValueAnalysis)"
+          "killing_test": "ro.tss.armstrong.BoundaryValueAnalysis.BVA04(ro.tss.armstrong.BoundaryValueAnalysis)"
         },
         {
           "status": "KILLED",
@@ -240,7 +240,7 @@
             41
           ],
           "description": "Replaced integer multiplication with division",
-          "killing_test": "ro.tss.armstrong.BoundaryValueAnalysis.BVA09(ro.tss.armstrong.BoundaryValueAnalysis)"
+          "killing_test": "ro.tss.armstrong.BoundaryValueAnalysis.BVA04(ro.tss.armstrong.BoundaryValueAnalysis)"
         },
         {
           "status": "KILLED",
@@ -250,7 +250,7 @@
             42
           ],
           "description": "Replaced integer addition with subtraction",
-          "killing_test": "ro.tss.armstrong.BoundaryValueAnalysis.BVA09(ro.tss.armstrong.BoundaryValueAnalysis)"
+          "killing_test": "ro.tss.armstrong.BoundaryValueAnalysis.BVA04(ro.tss.armstrong.BoundaryValueAnalysis)"
         },
         {
           "status": "KILLED",
@@ -260,7 +260,7 @@
             48
           ],
           "description": "Replaced integer division with multiplication",
-          "killing_test": "ro.tss.armstrong.BoundaryValueAnalysis.BVA09(ro.tss.armstrong.BoundaryValueAnalysis)"
+          "killing_test": "ro.tss.armstrong.BoundaryValueAnalysis.BVA04(ro.tss.armstrong.BoundaryValueAnalysis)"
         },
         {
           "status": "KILLED",
@@ -290,7 +290,7 @@
             27
           ],
           "description": "negated conditional",
-          "killing_test": "ro.tss.armstrong.BoundaryValueAnalysis.BVA09(ro.tss.armstrong.BoundaryValueAnalysis)"
+          "killing_test": "ro.tss.armstrong.BoundaryValueAnalysis.BVA04(ro.tss.armstrong.BoundaryValueAnalysis)"
         },
         {
           "status": "KILLED",
@@ -310,7 +310,7 @@
             13
           ],
           "description": "replaced return value with \"\" for ro/tss/armstrong/Main::evaluate",
-          "killing_test": "ro.tss.armstrong.BoundaryValueAnalysis.BVA16(ro.tss.armstrong.BoundaryValueAnalysis)"
+          "killing_test": "ro.tss.armstrong.BoundaryValueAnalysis.BVA14(ro.tss.armstrong.BoundaryValueAnalysis)"
         },
         {
           "status": "KILLED",
@@ -320,7 +320,7 @@
             62
           ],
           "description": "replaced return value with \"\" for ro/tss/armstrong/Main::evaluate",
-          "killing_test": "ro.tss.armstrong.BoundaryValueAnalysis.BVA09(ro.tss.armstrong.BoundaryValueAnalysis)"
+          "killing_test": "ro.tss.armstrong.BoundaryValueAnalysis.BVA04(ro.tss.armstrong.BoundaryValueAnalysis)"
         },
         {
           "status": "KILLED",
@@ -330,7 +330,7 @@
             67
           ],
           "description": "replaced return value with \"\" for ro/tss/armstrong/Main::evaluate",
-          "killing_test": "ro.tss.armstrong.BoundaryValueAnalysis.BVA04(ro.tss.armstrong.BoundaryValueAnalysis)"
+          "killing_test": "ro.tss.armstrong.BoundaryValueAnalysis.BVA09(ro.tss.armstrong.BoundaryValueAnalysis)"
         }
       ]
     },
@@ -1483,14 +1483,14 @@
     "src/main/java/ro/tss/armstrong/Main.java": "5ad80008944ef512aeefc99a6a62b3d81be5c89a63544633f0eefcfe054098ca",
     "rapoarte/major/mutants.log": "4c4b867186af2f9d8aafdbc0b4226d795b8c3f5cdf6fc1e3ac63b103b55651ce",
     "src/test/java/ro/tss/armstrong/ModifiedConditionDecisionCoverage.java": "ce8db005c8e42e117e57f95d021910d8111f11a381f6e6566531a0a6ae0fad3c",
-    "src/test/java/ro/tss/armstrong/EquivalncePartitioning.java": "4b7d2007aba56211aeed4734a4a00f18d5ec70b861bb9dfd65dac525671e66bf",
-    "src/test/java/ro/tss/armstrong/BoundaryValueAnalysis.java": "8e3393a8b132f1295cd41cd7b59e32fa2693873bcce94c40f6318495b7a3fe3b",
+    "src/test/java/ro/tss/armstrong/BoundaryValueAnalysis.java": "8768cf4389b3f2345ec4a8f2e4675a253dd043154f713aed80cb0f2beea7049e",
     "src/test/java/ro/tss/armstrong/RegressionTest.java": "8e68fe26b0094362d4932a6e1d7b68cb3ebab823b9e57328bfc0b0dc6ba38f73",
+    "src/test/java/ro/tss/armstrong/EquivalencePartitioning.java": "a117db084ce57e1fa1ae7f62108d44b3f69cf6a26574d73e77d5a80cd57e7a75",
     "src/test/java/ro/tss/armstrong/CauseEffectGraphing.java": "75c39d23224961e5fb325c70a630617f492069e3a0e62476e59581922d3efc51",
     "scripts/MutationWitnessCheck.java": "30e9a5aafb4874a1c21d4ed66b761c3df957031530bd527b7edf71efe58f892e",
-    "rapoarte/pit/EpTest/mutations.xml": "f019fe74e5074dc6dfef5b511ae60451382766768c0eacb3288d80d22fe49731",
+    "rapoarte/pit/EpTest/mutations.xml": "6696c4ade967443004efc0b7a54ec97a3be43dea73b6ddae554c53518fea8c96",
     "rapoarte/major/EpTest/details.csv": "1cfc513b4bf44008e9b53fa02b17d4dd2f27d530843d47c31d581368f93b47f7",
-    "rapoarte/pit/BvaTest/mutations.xml": "e8ec4baa6865a25f0fdfceae88bab2ce9038c65d7121f6f6bf37e3cb5a3a7dd9",
+    "rapoarte/pit/BvaTest/mutations.xml": "68178b4200b3eae0ba030a27b808868afa806ddd7185f606c9f47f96d28dd4c8",
     "rapoarte/major/BvaTest/details.csv": "1b89bcf13f3b383d0884a89b0a94a141b07629d77281b1a2053fd9a4ebae812a",
     "rapoarte/pit/CegTest/mutations.xml": "478138067c10befdb05e6e8192c3717db37fb9384eb6fa3308accf6f053e0d87",
     "rapoarte/major/CegTest/details.csv": "4594bee0f8c95803b73f58c079f1a50e0da64895d882387846543805623b89c2",

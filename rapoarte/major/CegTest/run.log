@@ -21,12 +21,12 @@ mutation:
     [junit] MAJOR: Run mutation analysis with 31 mutant(s) and 1 test(s).
     [junit] MAJOR: ------------------------------------------------------------
     [junit] MAJOR: [1;34m1/1 - ro.tss.armstrong.CauseEffectGraphing (6ms / 31):[0m
-    [junit] MAJOR: 2301 (26 / 31 / 31) -> AVG-RTPM: 74ms
+    [junit] MAJOR: 2283 (26 / 31 / 31) -> AVG-RTPM: 73ms
     [junit] MAJOR: Mutants killed (FAIL-EXC-TIME) / live: 26 (20-4-2) / 5
     [junit] MAJOR: ------------------------------------------------------------
     [junit] MAJOR: Summary:
     [junit] MAJOR: 
-    [junit] MAJOR: Analysis time                 : 2.30 seconds
+    [junit] MAJOR: Analysis time                 : 2.28 seconds
     [junit] MAJOR: Mutation score                : 83.87% (83.87%)
     [junit] MAJOR: Mutants killed (FAIL-EXC-TIME): 26 (20-4-2)
     [junit] MAJOR: Mutants live                  : 5

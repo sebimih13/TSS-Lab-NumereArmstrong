@@ -3,7 +3,7 @@ package ro.tss.armstrong;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-public class EquivalncePartitioning {
+public class EquivalencePartitioning {
     @Test
     public void EP01() {
         assertEquals("DA", Main.evaluate(153));

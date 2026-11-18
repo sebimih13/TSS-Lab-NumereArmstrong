@@ -117,7 +117,7 @@ def main_class(folder):
 
 def class_name(folder, suite):
     aliases = {
-        "EpTest": "EquivalncePartitioning",
+        "EpTest": "EquivalencePartitioning",
         "BvaTest": "BoundaryValueAnalysis",
         "CegTest": "CauseEffectGraphing",
         "McdcTest": "ModifiedConditionDecisionCoverage",

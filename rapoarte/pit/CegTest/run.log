@@ -1,12 +1,12 @@
 $ /nix/store/avqpx52zv42hm3sssdbrhkcwf8ifha0z-openjdk-17.0.21.0.3+1/lib/openjdk/bin/java -cp /home/andrei/programming/tss-armstrong/.tools/pitest-1.17.4.jar:/home/andrei/programming/tss-armstrong/.tools/pitest-entry-1.17.4.jar:/home/andrei/programming/tss-armstrong/.tools/pitest-command-line-1.17.4.jar:/home/andrei/programming/tss-armstrong/.tools/commons-text-1.12.0.jar:/home/andrei/programming/tss-armstrong/.tools/commons-lang3-3.14.0.jar:/home/andrei/programming/tss-armstrong/.tools/junit-4.13.2.jar:/home/andrei/programming/tss-armstrong/.tools/hamcrest-core-1.3.jar org.pitest.mutationtest.commandline.MutationCoverageReport --reportDir /home/andrei/programming/tss-armstrong/rapoarte/pit/CegTest --sourceDirs /home/andrei/programming/tss-armstrong/src/main/java --targetClasses ro.tss.armstrong.Main --targetTests ro.tss.armstrong.CauseEffectGraphing --classPath /home/andrei/programming/tss-armstrong/target/classes,/home/andrei/programming/tss-armstrong/target/test-classes,/home/andrei/programming/tss-armstrong/.tools/junit-4.13.2.jar,/home/andrei/programming/tss-armstrong/.tools/hamcrest-core-1.3.jar --mutableCodePaths /home/andrei/programming/tss-armstrong/target/classes --excludedMethods <init> --outputFormats XML,HTML --timestampedReports false --threads 2 --timeoutConst 1000 --jvmPath /nix/store/avqpx52zv42hm3sssdbrhkcwf8ifha0z-openjdk-17.0.21.0.3+1/lib/openjdk/bin/java
-1:46:23 PM PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
-1:46:23 PM PIT >> INFO : Created 1 mutation test units in pre scan
-1:46:23 PM PIT >> INFO : Sending 1 test classes to minion
-1:46:23 PM PIT >> INFO : Sent tests to minion
-/-\1:46:23 PM PIT >> INFO : Calculated coverage in 0 seconds.
-1:46:23 PM PIT >> INFO : Created 1 mutation test units
-1:46:25 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
-/1:46:25 PM PIT >> INFO : Completed in 1 seconds
+4:32:44 PM PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+4:32:44 PM PIT >> INFO : Created 1 mutation test units in pre scan
+4:32:44 PM PIT >> INFO : Sending 1 test classes to minion
+4:32:44 PM PIT >> INFO : Sent tests to minion
+/-\4:32:44 PM PIT >> INFO : Calculated coverage in 0 seconds.
+4:32:44 PM PIT >> INFO : Created 1 mutation test units
+4:32:45 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/4:32:45 PM PIT >> INFO : Completed in 1 seconds
 ================================================================================
 - Mutators
 ================================================================================

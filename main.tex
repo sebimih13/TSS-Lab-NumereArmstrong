@@ -42,7 +42,7 @@
 {\large Neculae Andrei-Fabian \textbf{506}\par}
 \vfill
 \vspace{12mm}
-{\large 4 noiembrie 2026\par}
+{\large 19 noiembrie 2026\par}
 \end{titlepage}
 \section{Enunțul temei și criterii de acceptare}
 Se dă un număr natural de exact trei cifre, 100 \ensuremath{\leq} n \ensuremath{\leq} 999.\allowbreak{} Să se determine dacă n este egal cu suma cuburilor cifrelor sale.\allowbreak{} Un asemenea număr se numește număr Armstrong de trei cifre.\allowbreak{}
@@ -54,7 +54,7 @@ Să se scrie un program care va afișa mesajul:
 \item \texttt{INVALID}, dacă numărul este în afara intervalului închis [100,999]
 \end{itemize}
 
-\subsection{Exemple}
+\subsection{Example}
 
 \begin{tabular}{@{}l@{\quad}c@{\quad}l@{}}
 Pentru $n=153$, avem $1^{3}+5^{3}+3^{3}=1+125+27=153$
@@ -68,9 +68,9 @@ Pentru $n=123$, avem $1^{3}+2^{3}+3^{3}=1+8+27=36$
 
 \textbf{Clase intrări:}
 \begin{itemize}[label=\textendash]
-\item $N_1=\{n\mid 100\leq n\leq999\}$ intrări valide
-\item $N_2=\{n\mid n<100\}$ intrări sub limita inferioară
-\item $N_3=\{n\mid n>999\}$ intrări peste limita superioară
+\item $N_1=\{n \in \mathbb{N} \mid 100\leq n\leq999\}$ intrări valid
+\item $N_2=\{n \in \mathbb{N} \mid n<100\}$ intrări sub limita inferioară
+\item $N_3=\{n \in \mathbb{N} \mid n>999\}$ intrări peste limita superioară
 \end{itemize}
 
 \textbf{Clase ieșiri:}
@@ -111,7 +111,7 @@ EP04 & 1000 & INVAL\allowbreak{}ID \\
 \begin{minipage}{\linewidth}
 \textbf{Implementarea testelor și raportul de acoperire}
 \begin{lstlisting}[language=Java,firstnumber=1]
-public class EquivalncePartitioning {
+public class EquivalencePartitioning {
     @Test
     public void EP01() {
         assertEquals("DA", Main.evaluate(153));
@@ -138,7 +138,7 @@ public class EquivalncePartitioning {
 \textbf{Rezultatul execuției:} \texttt{OK (4 tests)}
 
 \begin{center}
-\includegraphics[width=\linewidth]{figuri/coverage_eptest_v02.png}
+\includegraphics[width=\linewidth]{rapoarte/figuri/coverage_eptest.png}
 \par\small Raport JaCoCo pentru suita Equivalence partitioning
 \end{center}
 \end{minipage}
@@ -156,7 +156,7 @@ Astfel verificăm valorile imediat exterioare și limitele.
 
 \textbf{Caz special:} numerele Armstrong de trei cifre sunt
 $153,370,371,407$. Le verificăm împreună cu vecinii lor:
-$152,153,154$; $369,370,371,372$; $406,407,408$ și cu vecinii limitelor: $101,998$.
+$152,153,154$; $369,370,371,372$; $406,407,408$.
 Valorile $370$ și $371$ sunt consecutive și trebuie să producă ambele \texttt{DA}, prin urmare nu putem presupune că vecinul unui număr Armstrong produce automat \texttt{NU}.
 
 \textbf{Teste:}
@@ -174,20 +174,18 @@ Test & n & Afișare program \\
 \bottomrule\endfoot
 BVA01 & 99 & INVAL\allowbreak{}ID \\
 BVA02 & 100 & NU \\
-BVA03 & 101 & NU \\
-BVA04 & 152 & NU \\
-BVA05 & 153 & DA \\
-BVA06 & 154 & NU \\
-BVA07 & 369 & NU \\
-BVA08 & 370 & DA \\
-BVA09 & 371 & DA \\
-BVA10 & 372 & NU \\
-BVA11 & 406 & NU \\
-BVA12 & 407 & DA \\
-BVA13 & 408 & NU \\
-BVA14 & 998 & NU \\
-BVA15 & 999 & NU \\
-BVA16 & 1000 & INVAL\allowbreak{}ID \\
+BVA03 & 152 & NU \\
+BVA04 & 153 & DA \\
+BVA05 & 154 & NU \\
+BVA06 & 369 & NU \\
+BVA07 & 370 & DA \\
+BVA08 & 371 & DA \\
+BVA09 & 372 & NU \\
+BVA10 & 406 & NU \\
+BVA11 & 407 & DA \\
+BVA12 & 408 & NU \\
+BVA13 & 999 & NU \\
+BVA14 & 1000 & INVAL\allowbreak{}ID \\
 
 \end{longtable}
 \endgroup
@@ -207,81 +205,71 @@ public class BoundaryValueAnalysis {
 
     @Test
     public void BVA03() {
-        assertEquals("NU", Main.evaluate(101));
-    }
-
-    @Test
-    public void BVA04() {
         assertEquals("NU", Main.evaluate(152));
     }
 
     @Test
-    public void BVA05() {
+    public void BVA04() {
         assertEquals("DA", Main.evaluate(153));
     }
 
     @Test
-    public void BVA06() {
+    public void BVA05() {
         assertEquals("NU", Main.evaluate(154));
     }
 
     @Test
-    public void BVA07() {
+    public void BVA06() {
         assertEquals("NU", Main.evaluate(369));
     }
 
     @Test
-    public void BVA08() {
+    public void BVA07() {
         assertEquals("DA", Main.evaluate(370));
     }
 
     @Test
-    public void BVA09() {
+    public void BVA08() {
         assertEquals("DA", Main.evaluate(371));
     }
 
     @Test
-    public void BVA10() {
+    public void BVA09() {
         assertEquals("NU", Main.evaluate(372));
     }
 
     @Test
-    public void BVA11() {
+    public void BVA10() {
         assertEquals("NU", Main.evaluate(406));
     }
 
     @Test
-    public void BVA12() {
+    public void BVA11() {
         assertEquals("DA", Main.evaluate(407));
     }
 
     @Test
-    public void BVA13() {
+    public void BVA12() {
         assertEquals("NU", Main.evaluate(408));
     }
 
     @Test
-    public void BVA14() {
-        assertEquals("NU", Main.evaluate(998));
-    }
-
-    @Test
-    public void BVA15() {
+    public void BVA13() {
         assertEquals("NU", Main.evaluate(999));
     }
 
     @Test
-    public void BVA16() {
+    public void BVA14() {
         assertEquals("INVALID", Main.evaluate(1000));
     }
 
 }
 \end{lstlisting}
 
-\textbf{Rezultatul execuției:} \texttt{OK (16 tests)}
+\textbf{Rezultatul execuției:} \texttt{OK (14 tests)}
 
 \begin{center}
-\includegraphics[width=\linewidth]{figuri/coverage_bvatest_v02.png}
+\includegraphics[width=\linewidth]{rapoarte/figuri/coverage_bvatest.png}
 \par\small Raport JaCoCo pentru suita Boundary value analysis
 \end{center}
 
@@ -389,7 +377,7 @@ public class BoundaryValueAnalysis {
 
 \end{enumerate}
 
-\textbf{Tabel de decizie final și teste:}
+\textbf{Table de decizie final și teste:}
 \begin{center}
 \begin{tabular}{@{}lccc@{}}
 \toprule
@@ -434,7 +422,7 @@ public class CauseEffectGraphing {
 \textbf{Rezultatul execuției:} \texttt{OK (3 tests)}
 
 \begin{center}
-\includegraphics[width=\linewidth]{figuri/coverage_cegtest_v02.png}
+\includegraphics[width=\linewidth]{rapoarte/figuri/coverage_cegtest.png}
 \par\small Raport JaCoCo pentru suita Cause-effect graphing
 \end{center}
 \end{minipage}
@@ -451,7 +439,7 @@ Ramura neacoperită este rezultatul adevărat al condiției \texttt{n > 999}.
 Pentru $n=99$, condiția \texttt{n < 100} este adevărată, iar evaluarea
 scurtcircuitată a operatorului \texttt{||} împiedică evaluarea celei de-a doua
 condiții. Pentru intrările valide $100$ și $153$, condiția \texttt{n > 999}
-este evaluată, dar rezultatul său este fals. Astfel, verificarea tuturor
+este evaluată, iar rezultatul este fals. Astfel, verificarea tuturor
 efectelor din tabelul de decizie nu garantează parcurgerea fiecărei ramuri
 a implementării. Adăugarea cazului $n=1000$, cu rezultatul așteptat
 \texttt{INVALID}, ar determina evaluarea condiției \texttt{n > 999} ca
@@ -485,7 +473,43 @@ public static String evaluate(int n) {
 \subsection{Graful orientat al programului}
 
 \begin{center}
-\input{figuri/graf_linii.tikz}
+\begin{tikzpicture}[x=1cm,y=0.72cm,>=stealth,
+ every node/.style={font=\large,inner sep=3pt},every path/.style={thick}]
+\node (n1) at (0,0) {1};
+\node (n2) at (0,-1) {2};
+\node (n3) at (-3,-2.1) {3};
+\node (n4) at (0,-2.1) {4};
+\node (n5) at (0,-3.1) {5};
+\node (n6) at (0,-4.1) {6};
+\node (n7) at (0,-5.1) {7};
+\node (n8) at (3,-6.1) {8};
+\node (n9) at (3,-7.1) {9};
+\node (n10) at (3,-8.1) {10};
+\node (n11) at (0,-9.1) {11};
+\node (n12) at (0,-10.1) {12};
+\node (n13) at (-1.5,-11.95) {13};
+\node (n14) at (1.5,-11.3) {14};
+\node (n15) at (1.5,-12.3) {15};
+\node (n16) at (0,-13.8) {16};
+\draw[->] (n1) -- (n2);
+\draw[->] (n2) -- node[above left,font=\small] {T} (n3);
+\draw[->] (n2) -- node[pos=.55,right=3pt,font=\small] {F} (n4);
+\draw[->] (n4) -- (n5);
+\draw[->] (n3) |- (n16);
+\draw[->] (n5) -- (n6);
+\draw[->] (n6) -- (n7);
+\draw[->] (n7) -- node[below left,font=\small] {T} (n8);
+\draw[->] (n7) -- node[left,font=\small] {F} (n11);
+\draw[->] (n8) -- (n9);
+\draw[->] (n9) -- (n10);
+\draw[->] (n11) -- (n12);
+\draw[->] (n10) -- (4.2,-8.1) -- (4.2,-5.1) -- (n7);
+\draw[->] (n12) -- node[above left,font=\small] {T} (n13);
+\draw[->] (n12) -- node[above right,font=\small] {F} (n14);
+\draw[->] (n14) -- (n15);
+\draw[->] (n13) -- (n16);
+\draw[->] (n15) -- (n16);
+\end{tikzpicture}
 \end{center}
 
 \clearpage
@@ -592,7 +616,7 @@ public class ModifiedConditionDecisionCoverage {
 \textbf{Rezultatul execuției:} \texttt{OK (4 tests)}
 
 \begin{center}
-\includegraphics[width=\linewidth]{figuri/coverage_mcdc_armstrong_v03.png}
+\includegraphics[width=\linewidth]{rapoarte/figuri/coverage_mcdc.png}
 \par\small Captură din raportul JaCoCo al suitei \texttt{Modified\allowbreak{}Condition\allowbreak{}Decision\allowbreak{}Coverage}
 \end{center}
 
@@ -659,12 +683,12 @@ BVA02 & 100 & \texttt{NU} & $c_3$ și 3 parcurgeri ale lui $c_4$ \\
 \bottomrule
 \end{tabular}
 \end{center}
-Tabelul descrie traseele închise prin arcul fictiv $16\to1$.
+Tabelul describe traseele închise prin arcul fictiv $16\to1$.
 Pentru $n=153$, variabila \texttt{rest} ia succesiv valorile $153,15,1,0$;
 pentru $n=100$, valorile sunt $100,10,1,0$.
 Astfel, circuitul $c_4$ este parcurs de trei ori înainte de ieșirea din buclă.
 Circuitele $c_2$ și $c_3$ descriu partea traseului rămasă după eliminarea
-acestor parcurgeri ale buclei. Ele nu sunt executabile separat cu zero
+acestor parcurgeri ale buclei. Ele nu sunt executabile separate cu zero
 iterații pentru o intrare validă de trei cifre.
 
 
@@ -699,7 +723,7 @@ Pentru operanzi booleeni, cei doi operatori au aceeași tabelă de adevăr.
 Diferența este că \texttt{||} scurtcircuitează evaluarea, în timp ce
 \texttt{|} evaluează ambele comparații. Comparațiile sunt definite pentru
 orice valoare de tip \texttt{int}, nu modifică starea programului și nu
-produc excepții. Prin urmare, rezultatul metodei este identic cu cel al
+produc excepții. Prin urmare, rezultatul metodei este identical cu cel al
 originalului pentru orice intrare. 
 
 \subsection{Mutant ne-echivalent, omorât de test}
@@ -721,13 +745,13 @@ Pentru $n=100$, atât originalul, cât și mutantul întorc \texttt{NU},
 așadar \texttt{BVA02} nu detectează modificarea.
 Totuși, mutantul nu este echivalent: pentru $n=999$, originalul calculează
 $9^3+9^3+9^3=2187\ne999$ și întoarce \texttt{NU}, iar mutantul întoarce
-\texttt{INVALID}. Testul \texttt{BVA15}, cu această intrare, îl omoară.
+\texttt{INVALID}. Testul \texttt{BVA13}, cu această intrare, îl omoară.
 
 \subsection{Rezultatele verificării}
 \begin{center}
 \begin{tabular}{@{}lccl@{}}
 \toprule
-Variantă & \shortstack{BVA02\\[3pt]$n=100$} & \shortstack{BVA15\\[3pt]$n=999$} & Clasificare \\
+Variantă & \shortstack{BVA02\\[3pt]$n=100$} & \shortstack{BVA13\\[3pt]$n=999$} & Clasificare \\
 \midrule
 Original & \texttt{NU} & \texttt{NU} & Referință \\
 Mutant echivalent & \texttt{NU} & \texttt{NU} & Echivalent \\
@@ -766,8 +790,8 @@ verificat sau terminarea execuției.
 \toprule
 Metodă & Clasă JUnit & Teste \\
 \midrule
-EP & \texttt{EquivalncePartitioning} & 4 \\
-BVA & \texttt{BoundaryValueAnalysis} & 16 \\
+EP & \texttt{EquivalencePartitioning} & 4 \\
+BVA & \texttt{BoundaryValueAnalysis} & 14 \\
 CEG & \texttt{CauseEffectGraphing} & 3 \\
 MC/DC & \texttt{ModifiedConditionDecisionCoverage} & 4 \\
 \bottomrule
@@ -821,20 +845,20 @@ sunt identificate și explicate pe cod.
 \subsubsection{Scorul brut, cu timeout-uri considerate detectări}
 Scorul de mutație, notat $MS$ (\emph{mutation score}), reprezintă procentul mutanților detectați de o suită de teste din totalul mutanților generați și analizați. În acord cu totalurile afișate de uneltele utilizate, considerăm detectați atât mutanții omorâți prin eșecul unei aserțiuni sau printr-o excepție ($K$), cât și cei pentru care execuția depășește limita de timp ($T$):
 \[
-MS=\frac{K+T}{G}\times100\%
+MS=\frac{K+T}{G}\times100\ (\%)
 \]
 Dacă originalul termină pentru o intrare, iar mutantul introduce o buclă
 infinită, schimbarea este observabilă, chiar dacă nu se ajunge la o aserțiune.
-De aceea, coloanele $K$ și $T$ rămân distincte în tabele, iar calculul
+De aceea, valorile $K$ și $T$ rămân distincte, iar calculul
 scorului folosește explicit suma lor. \href{https://pitest.org/quickstart/basic_concepts/}{PIT}
-prezintă separat stările \texttt{Killed}, \texttt{Survived},
+prezintă separate stările \texttt{Killed}, \texttt{Survived},
 \texttt{No coverage} și \texttt{Timed Out}, în timp ce Major raportează
 agregatul \texttt{FAIL--EXC--TIME} pentru mutanții detectați.
 
 Indicatorul $TS$ (\emph{test strength}) raportează detectările numai la mutanții
 atinși de teste:
 \[
-TS=\frac{K+T}{G-U}\times100\%
+TS=\frac{K+T}{G-U}\times100\ (\%)
 \]
 În toate cele opt rulări, $U=0$. În consecință, $TS$ și $MS$ au aceeași
 valoare numerică în acest experiment. Această egalitate nu implică faptul
@@ -845,7 +869,7 @@ că cele două măsuri sunt întotdeauna identice.
 Scorurile fără timeout sunt etichetate separat, pentru a evita compararea
 unor procente calculate cu numitori diferiți.
 \[
-MS_{\text{fără timeout}}=\frac{K}{G-T}\times100\%
+MS_{\text{fără timeout}}=\frac{K}{G-T}\times100\ (\%)
 \]
 Aceasta elimină timeout-urile atât din numărător, cât și din numitor.
 Diferența față de scorul brut de mai sus provine din formulă, nu dintr-o
@@ -860,7 +884,7 @@ PIT este utilizat prin interfața de linie de comandă, cu biblioteca
 Scriptul \path{scripts/run.py} lansează clasa
 \path{org.pitest.mutationtest.commandline.MutationCoverageReport}.
 Originalul și testele sunt compilate cu JDK 17 și opțiunea \texttt{--release 11},
-care produce clase compatibile cu Java 11. 
+care produce clase compatible cu Java 11. 
 
 Selecția este limitată la \path{ro.tss.armstrong.Main}.
 În această clasă, metoda analizată este \texttt{evaluate}; constructorul
@@ -919,7 +943,7 @@ mutantul limitei superioare este astfel supraviețuitor, nu neacoperit.
 Rezultatul arată că suita cu 100\% acoperire a ramurilor poate lăsa totuși
 mutanți în viață. EP și MC/DC au această acoperire structurală,
 dar nu conțin toate valorile care disting comparațiile originale de
-versiunile cu limite modificate.
+versiunile cu limit modificate.
 
 \subsubsection{Supraviețuitori și teste care evidențiază diferențele}
 \textbf{Modificarea limitei inferioare}
@@ -939,7 +963,7 @@ if (n < 100 || n >= 999) {
 \end{lstlisting}
 Acest mutant supraviețuiește în EP, CEG și MC/DC.
 Niciuna dintre cele trei suite nu conține $n=999$.
-\texttt{BVA15} verifică această valoare: originalul întoarce \texttt{NU},
+\texttt{BVA13} verifică această valoare: originalul întoarce \texttt{NU},
 întrucât suma cuburilor este 2187, iar mutantul întoarce \texttt{INVALID}.
 Prin urmare, supraviețuirea indică o lipsă concretă a selecției de teste,
 nu echivalența mutantului.
@@ -958,7 +982,7 @@ neterminare.
 
 \subsection{Major: configurare și utilizare}
 \subsubsection{Generarea mutanților la compilare}
-Major este utilizat în versiunea 3.0.1, cu un JDK 11 local proiectului.
+Major este utilizat în versiunea 3.0.1, cu JDK 11 local.
 Sursa analizată este aceeași clasă \texttt{Main}, iar testele sunt cele
 executate și cu PIT. Nu se modifică aserțiunile și nu se înlocuiesc datele
 pentru a favoriza una dintre unelte.
@@ -998,7 +1022,7 @@ Pentru comparația \texttt{n < 100}, raportul include
 \texttt{n != 100}, \texttt{n <= 100} și \texttt{false}.
 COR produce, între altele, înlocuirea întregii validări cu un singur operand,
 iar STD elimină instrucțiunea \texttt{rest /= 10}.
-Aceste modificări nu au toate un corespondent în inventarul implicit PIT
+Aceste modificări nu au toate un correspondent în inventarul implicit PIT
 observat pentru aceeași metodă.
 
 În tabelul următor, fiecare celulă a suitei indică detectările $K+T$
@@ -1058,7 +1082,7 @@ $n<100$, respectiv $n>999$.
 
 \textbf{Mutantul 5: limita superioară}
 - Pentru $n=999$, originalul întoarce \texttt{NU}, iar mutantul
-\texttt{INVALID}. Numai BVA include această valoare, prin \texttt{BVA15}.
+\texttt{INVALID}. Numai BVA include această valoare, prin \texttt{BVA13}.
 Absența lui 999 explică supraviețuirea în celelalte trei suite.
 
 \textbf{Mutanții 6 și 7: eliminarea validării superioare}
@@ -1076,7 +1100,7 @@ de testele valide din EP, CEG și MC/DC: acestea folosesc fie un număr
 Armstrong, fie un număr pentru care suma cuburilor este mai mică decât $n$.
 Pentru $n=154$, suma este $1+125+64=190>154$.
 Originalul întoarce \texttt{NU}, iar mutantul întoarce \texttt{DA}.
-\texttt{BVA06} verifică acest caz și omoară mutantul.
+\texttt{BVA05} verifică acest caz și omoară mutantul.
 
 \subsubsection{Demonstrarea echivalenței mutantului 11}
 Originalul folosește condiția \texttt{rest > 0}, iar mutantul
@@ -1088,7 +1112,7 @@ Pe acest invariant, relațiile
 \[
 \texttt{rest}>0\quad\text{și}\quad\texttt{rest}\ne0
 \]
-sunt echivalente. Pentru intrările invalide, metoda întoarce
+sunt echivalente. Pentru intrările invalid, metoda întoarce
 \texttt{INVALID} înainte de buclă, în ambele variante.
 Prin urmare, mutantul 11 păstrează rezultatul și terminarea pentru
 orice intrare de tip \texttt{int}.
@@ -1104,7 +1128,7 @@ Toate suitele detectează prin timeout aceiași doi mutanți:
 \subsubsection{Scoruri brute și scoruri ajustate}
 După demonstrarea echivalenței, se poate calcula și scorul ajustat:
 \[
-MS_{\mathrm{ajustat}}=\frac{K+T}{G-E}\times100\%
+MS_{\mathrm{ajustat}}=\frac{K+T}{G-E}\times100\ (\%)
 \]
 În inventarul PIT, $E=0$, astfel încât scorul ajustat coincide cu cel brut.
 În inventarul Major, $E=1$ pentru toate suitele, iar numitorul ajustat
@@ -1120,7 +1144,7 @@ este $31-1=30$.
 
 \subsubsection{Interpretarea rezultatelor pentru cele patru tehnici}
 \begin{itemize}
-    \item \textbf{EP:} Verifică toate categoriile de rezultat,
+    \item \textbf{EP:} Verifică toate categoriile de rezultate,
     dar omite valorile de frontieră 100 și 999, precum și
     cazurile în care suma cuburilor depășește numărul.
     Astfel, unii mutanți supraviețuiesc.
@@ -1143,10 +1167,10 @@ este $31-1=30$.
 \section{Utilizarea AI}
 \textbf{Modele folosite:} GPT-6.1 Sol și GPT-6
 
-\subsection{Generarea unor propuneri de probleme de laborator}
+\subsection{Generarea unor propuneri de problem de laborator}
 \begin{itemize}[label=\textendash]
-\item \textbf{Prompt (descriere):} Propune probleme de laborator asupra cărora să putem aplica tehnicile de testare cerute în proiect.
-\item \textbf{Rezultat:} Mai multe propuneri de probleme, cu enunțuri și exemple de intrări și ieșiri, din care a fost aleasă verificarea numerelor Armstrong de trei cifre.
+\item \textbf{Prompt (descriere):} Propune problem de laborator asupra cărora să putem aplica tehnicile de testare cerute în proiect.
+\item \textbf{Rezultat:} Mai multe propuneri de problem, cu enunțuri și example de intrări și ieșiri, din care a fost aleasă verificarea numerelor Armstrong de trei cifre.
 \item \textbf{Modificări:} Am selectat tema Armstrong.
 \item \textbf{Verificare:} Enunțul selectat a fost analizat în raport cu cerințele proiectului, iar corectitudinea rezultatelor pentru cazurile reprezentative a fost confirmată atât prin calculul sumei cuburilor cifrelor, cât și prin executarea testelor JUnit.
 \end{itemize}
@@ -1154,23 +1178,23 @@ este $31-1=30$.
 \subsection{Transpunerea documentației și a diagramelor în LaTeX}
 \begin{itemize}[label=\textendash]
 \item \textbf{Prompt (descriere):} Transpune documentația redactată de echipă în Markdown și diagramele aferente în format LaTeX.
-\item \textbf{Rezultat:} Un document LaTeX cu secțiuni, tabele, formule, fragmente de cod și diagrame TikZ, împreună cu versiunea PDF compilată.
+\item \textbf{Rezultat:} Un document LaTeX cu secțiuni, table, formule, fragmente de cod și diagrame TikZ, împreună cu versiunea PDF compilată.
 \item \textbf{Modificări:} Am solicitat reorganizarea capitolelor, modificarea structurii tabelelor, ajustarea prezentării textului și a listelor, precum și corectarea poziției etichetelor și a săgeților din diagrame.
-\item \textbf{Verificare:} Documentul a fost compilat, iar paginile randate au fost inspectate pentru identificarea problemelor de afișare. Fragmentele de cod, valorile din tabele și capturile rapoartelor au fost analizate cu fișierele corespunzătoare ale proiectului.
+\item \textbf{Verificare:} Documentul a fost compilat, iar paginile randate au fost inspectate pentru identificarea problemelor de afișare. Fragmentele de cod, valorile din table și capturile rapoartelor au fost analizate cu fișierele corespunzătoare ale proiectului.
 \end{itemize}
 
 \subsection{Integrarea și rularea uneltelor PIT și Major}
 \begin{itemize}[label=\textendash]
-\item \textbf{Prompt (descriere):} Configurează PIT și Major și rulează separat analiza de mutație pentru suitele EP, BVA, CEG și MC/DC.
+\item \textbf{Prompt (descriere):} Configurează PIT și Major și rulează separate analiza de mutație pentru suitele EP, BVA, CEG și MC/DC.
 \item \textbf{Rezultat:} Configurații și scripturi de execuție pentru cele două unelte, rapoarte de mutație pentru fiecare suită și loguri care consemnează rezultatele rulărilor.
 \item \textbf{Modificări:} Echipa a stabilit denumirile claselor de test și ale pachetului Java și a solicitat adaptarea prezentării configurațiilor, a comenzilor și a rapoartelor în documentație.
-\item \textbf{Verificare:} Am verificat executarea cu succes a testelor pe programul original, urmată de analiza logurilor și a rapoartelor generate în formatele XML și CSV. De asemenea, s-a confirmat concordanța dintre clasa analizată, suitele de teste executate individual și numărul de mutanți identificați de fiecare unealtă.
+\item \textbf{Verificare:} Am verificat executarea cu success a testelor pe programul original, urmată de analiza logurilor și a rapoartelor generate în formatele XML și CSV. De asemenea, s-a confirmat concordanța dintre clasa analizată, suitele de teste executate individual și numărul de mutanți identificați de fiecare unealtă.
 \end{itemize}
 
 \subsection{Interpretarea rezultatelor PIT și Major}
 \begin{itemize}[label=\textendash]
 \item \textbf{Prompt (descriere):} Calculează scorurile de mutație și explică diferențele dintre rezultatele PIT și Major, inclusiv influența operatorilor și a mutanților echivalenți.
-\item \textbf{Rezultat:} Scoruri pentru fiecare suită, tabele comparative și explicații privind mutanții omorâți, supraviețuitorii, depășirile limitei de timp și diferențele dintre operatorii celor două unelte.
+\item \textbf{Rezultat:} Scoruri pentru fiecare suită, table comparative și explicații privind mutanții omorâți, supraviețuitorii, depășirile limitei de timp și diferențele dintre operatorii celor două unelte.
 \item \textbf{Modificări:} Am reformulat explicațiile, simplificat notațiile și ajutat structura tabelelor pentru prezentarea finală.
 \item \textbf{Verificare:} Scorurile de mutație au fost recalculate pe baza rapoartelor originale și comparate cu valorile prezentate în documentație.
 \end{itemize}

@@ -22,7 +22,7 @@
         "MutantsKilled": "30",
         "MutantsLive": "1",
         "RuntimePreprocSeconds": "0.03",
-        "RuntimeAnalysisSeconds": "2.30"
+        "RuntimeAnalysisSeconds": "2.32"
       }
     ],
     "details_count": 31
@@ -36,7 +36,7 @@
         "MutantsKilled": "26",
         "MutantsLive": "5",
         "RuntimePreprocSeconds": "0.03",
-        "RuntimeAnalysisSeconds": "2.30"
+        "RuntimeAnalysisSeconds": "2.28"
       }
     ],
     "details_count": 31

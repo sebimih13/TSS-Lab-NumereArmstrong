@@ -23,7 +23,7 @@ OUT = EXERCISE / "rapoarte/studiu_mutatie"
 SUITES = ["EpTest", "BvaTest", "CegTest", "McdcTest"]
 LABELS = ["EP", "BVA", "CEG", "MC/DC"]
 ALIASES = [
-    "EquivalncePartitioning",
+    "EquivalencePartitioning",
     "BoundaryValueAnalysis",
     "CauseEffectGraphing",
     "ModifiedConditionDecisionCoverage",
