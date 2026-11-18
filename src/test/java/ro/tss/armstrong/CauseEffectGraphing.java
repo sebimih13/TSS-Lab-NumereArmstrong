@@ -1,6 +1,8 @@
 package ro.tss.armstrong;
+
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
+
 public class CauseEffectGraphing {
     @Test
     public void CEG01() {

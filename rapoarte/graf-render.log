@@ -1,1 +1,0 @@
-$ dot -Tsvg /home/seb/Developer/TSS-Lab-Proiect/main/14_armstrong/graf.dot -o /home/seb/Developer/TSS-Lab-Proiect/main/14_armstrong/graf.svg

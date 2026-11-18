@@ -150,13 +150,13 @@ public class EquivalncePartitioning {
 \textbf{Date de intrare:} $n$, număr întreg.
 
 \textbf{Frontiere:} intervalul valid este $[100,999]$ \\ 
-La limita inferioară alegem $n=\{99, 100, 101\}$ \\
-La limita superioară alegem $n=\{998, 999, 1000\}$ \\
-Astfel verificăm valorile imediat exterioare, limitele și vecinii interiori.
+La limita inferioară alegem $n=\{99, 100\}$ \\
+La limita superioară alegem $n=\{999, 1000\}$ \\
+Astfel verificăm valorile imediat exterioare și limitele.
 
 \textbf{Caz special:} numerele Armstrong de trei cifre sunt
 $153,370,371,407$. Le verificăm împreună cu vecinii lor:
-$152,153,154$; $369,370,371,372$; $406,407,408$.
+$152,153,154$; $369,370,371,372$; $406,407,408$ și cu vecinii limitelor: $101,998$.
 Valorile $370$ și $371$ sunt consecutive și trebuie să producă ambele \texttt{DA}, prin urmare nu putem presupune că vecinul unui număr Armstrong produce automat \texttt{NU}.
 
 \textbf{Teste:}

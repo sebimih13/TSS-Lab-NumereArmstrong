@@ -125,54 +125,6 @@
           "store_path": "/nix/store/w3ps4vf470m69d9l5bcbbipay9insx32-python3-3.15.2"
         }
       }
-    },
-    "texlive.combined.scheme-medium@latest": {
-      "last_modified": "2023-04-28T21:17:46Z",
-      "resolved": "github:NixOS/nixpkgs/358a179550508bf2dafdf1657a94b7f65d91c4bf#texlive.combined.scheme-medium",
-      "source": "devbox-search",
-      "version": "2022.20221227",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/0fsrn0qr6q4jyyj9ii0k3x5pzyz1v867-texlive-combined-medium-2022.20221227",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/0fsrn0qr6q4jyyj9ii0k3x5pzyz1v867-texlive-combined-medium-2022.20221227"
-        },
-        "aarch64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/psw1h2hf1f0ybb41q7n4ajd0maslsimj-texlive-combined-medium-2022.20221227",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/psw1h2hf1f0ybb41q7n4ajd0maslsimj-texlive-combined-medium-2022.20221227"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/k82cp0vayiymp5pbap4kb2wz0fqps0xi-texlive-combined-medium-2022.20221227",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/k82cp0vayiymp5pbap4kb2wz0fqps0xi-texlive-combined-medium-2022.20221227"
-        },
-        "x86_64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/07n0gn8gjfp5a64q9d4kmaqhr89ird4g-texlive-combined-medium-2022.20221227",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/07n0gn8gjfp5a64q9d4kmaqhr89ird4g-texlive-combined-medium-2022.20221227"
-        }
-      }
     }
   }
 }

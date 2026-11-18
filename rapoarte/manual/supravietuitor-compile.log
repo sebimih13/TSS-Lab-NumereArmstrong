@@ -1,1 +1,1 @@
-$ /usr/lib/jvm/java-17-temurin-jdk/bin/javac --release 11 -d /home/seb/Developer/TSS-Lab-NumereArmstrong/target/manual/supravietuitor /home/seb/Developer/TSS-Lab-NumereArmstrong/mutanti/supravietuitor/Main.java
+$ /nix/store/avqpx52zv42hm3sssdbrhkcwf8ifha0z-openjdk-17.0.21.0.3+1/lib/openjdk/bin/javac --release 11 -d /home/andrei/programming/tss-armstrong/target/manual/supravietuitor /home/andrei/programming/tss-armstrong/mutanti/supravietuitor/Main.java

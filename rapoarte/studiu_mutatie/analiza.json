@@ -682,187 +682,187 @@
         {
           "id": "1",
           "operator": "ROR",
-          "description": "1:ROR:<(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):5:103:n < 100 |==> n != 100",
+          "description": "1:ROR:<(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):5:102:n < 100 |==> n != 100",
           "status": "KILLED"
         },
         {
           "id": "2",
           "operator": "ROR",
-          "description": "2:ROR:<(int,int):<=(int,int):ro.tss.armstrong.Main@evaluate(int):5:103:n < 100 |==> n <= 100",
+          "description": "2:ROR:<(int,int):<=(int,int):ro.tss.armstrong.Main@evaluate(int):5:102:n < 100 |==> n <= 100",
           "status": "SURVIVED"
         },
         {
           "id": "3",
           "operator": "ROR",
-          "description": "3:ROR:<(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):5:105:n < 100 |==> false",
+          "description": "3:ROR:<(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):5:104:n < 100 |==> false",
           "status": "KILLED"
         },
         {
           "id": "4",
           "operator": "ROR",
-          "description": "4:ROR:>(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):5:114:n > 999 |==> n != 999",
+          "description": "4:ROR:>(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):5:113:n > 999 |==> n != 999",
           "status": "KILLED"
         },
         {
           "id": "5",
           "operator": "ROR",
-          "description": "5:ROR:>(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):5:114:n > 999 |==> n >= 999",
+          "description": "5:ROR:>(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):5:113:n > 999 |==> n >= 999",
           "status": "SURVIVED"
         },
         {
           "id": "6",
           "operator": "ROR",
-          "description": "6:ROR:>(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):5:116:n > 999 |==> false",
+          "description": "6:ROR:>(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):5:115:n > 999 |==> false",
           "status": "KILLED"
         },
         {
           "id": "7",
           "operator": "COR",
-          "description": "7:COR:||(boolean,boolean):LHS(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:103:n < 100 || n > 999 |==> n < 100",
+          "description": "7:COR:||(boolean,boolean):LHS(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:102:n < 100 || n > 999 |==> n < 100",
           "status": "KILLED"
         },
         {
           "id": "8",
           "operator": "COR",
-          "description": "8:COR:||(boolean,boolean):RHS(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:114:n < 100 || n > 999 |==> n > 999",
+          "description": "8:COR:||(boolean,boolean):RHS(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:113:n < 100 || n > 999 |==> n > 999",
           "status": "KILLED"
         },
         {
           "id": "9",
           "operator": "COR",
-          "description": "9:COR:||(boolean,boolean):TRUE(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:111:n < 100 || n > 999 |==> true",
+          "description": "9:COR:||(boolean,boolean):TRUE(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:110:n < 100 || n > 999 |==> true",
           "status": "KILLED"
         },
         {
           "id": "10",
           "operator": "STD",
-          "description": "10:STD:<RETURN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):6:138:return \"INVALID\"; |==> <NO-OP>",
+          "description": "10:STD:<RETURN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):6:136:return \"INVALID\"; |==> <NO-OP>",
           "status": "KILLED"
         },
         {
           "id": "11",
           "operator": "ROR",
-          "description": "11:ROR:>(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):10:225:rest > 0 |==> rest != 0",
+          "description": "11:ROR:>(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):10:223:rest > 0 |==> rest != 0",
           "status": "SURVIVED"
         },
         {
           "id": "12",
           "operator": "ROR",
-          "description": "12:ROR:>(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):10:225:rest > 0 |==> rest >= 0",
+          "description": "12:ROR:>(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):10:223:rest > 0 |==> rest >= 0",
           "status": "TIMED_OUT"
         },
         {
           "id": "13",
           "operator": "ROR",
-          "description": "13:ROR:>(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):10:230:rest > 0 |==> false",
+          "description": "13:ROR:>(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):10:228:rest > 0 |==> false",
           "status": "KILLED"
         },
         {
           "id": "14",
           "operator": "AOR",
-          "description": "14:AOR:%(int,int):*(int,int):ro.tss.armstrong.Main@evaluate(int):11:261:rest % 10 |==> rest * 10",
+          "description": "14:AOR:%(int,int):*(int,int):ro.tss.armstrong.Main@evaluate(int):11:259:rest % 10 |==> rest * 10",
           "status": "KILLED"
         },
         {
           "id": "15",
           "operator": "AOR",
-          "description": "15:AOR:%(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):11:261:rest % 10 |==> rest + 10",
+          "description": "15:AOR:%(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):11:259:rest % 10 |==> rest + 10",
           "status": "KILLED"
         },
         {
           "id": "16",
           "operator": "AOR",
-          "description": "16:AOR:%(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):11:261:rest % 10 |==> rest - 10",
+          "description": "16:AOR:%(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):11:259:rest % 10 |==> rest - 10",
           "status": "KILLED"
         },
         {
           "id": "17",
           "operator": "AOR",
-          "description": "17:AOR:%(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):11:261:rest % 10 |==> rest / 10",
+          "description": "17:AOR:%(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):11:259:rest % 10 |==> rest / 10",
           "status": "KILLED"
         },
         {
           "id": "18",
           "operator": "AOR",
-          "description": "18:AOR:*(int,int):%(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra |==> cifra % cifra",
+          "description": "18:AOR:*(int,int):%(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra |==> cifra % cifra",
           "status": "KILLED"
         },
         {
           "id": "19",
           "operator": "AOR",
-          "description": "19:AOR:*(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra |==> cifra + cifra",
+          "description": "19:AOR:*(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra |==> cifra + cifra",
           "status": "KILLED"
         },
         {
           "id": "20",
           "operator": "AOR",
-          "description": "20:AOR:*(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra |==> cifra - cifra",
+          "description": "20:AOR:*(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra |==> cifra - cifra",
           "status": "KILLED"
         },
         {
           "id": "21",
           "operator": "AOR",
-          "description": "21:AOR:*(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra |==> cifra / cifra",
+          "description": "21:AOR:*(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra |==> cifra / cifra",
           "status": "KILLED"
         },
         {
           "id": "22",
           "operator": "AOR",
-          "description": "22:AOR:*(int,int):%(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra * cifra |==> cifra * cifra % cifra",
+          "description": "22:AOR:*(int,int):%(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra * cifra |==> cifra * cifra % cifra",
           "status": "KILLED"
         },
         {
           "id": "23",
           "operator": "AOR",
-          "description": "23:AOR:*(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra * cifra |==> cifra * cifra + cifra",
+          "description": "23:AOR:*(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra * cifra |==> cifra * cifra + cifra",
           "status": "KILLED"
         },
         {
           "id": "24",
           "operator": "AOR",
-          "description": "24:AOR:*(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra * cifra |==> cifra * cifra - cifra",
+          "description": "24:AOR:*(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra * cifra |==> cifra * cifra - cifra",
           "status": "KILLED"
         },
         {
           "id": "25",
           "operator": "AOR",
-          "description": "25:AOR:*(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra * cifra |==> cifra * cifra / cifra",
+          "description": "25:AOR:*(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra * cifra |==> cifra * cifra / cifra",
           "status": "KILLED"
         },
         {
           "id": "26",
           "operator": "STD",
-          "description": "26:STD:<ASSIGN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):12:284:suma += cifra * cifra * cifra; |==> <NO-OP>",
+          "description": "26:STD:<ASSIGN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):12:282:suma += cifra * cifra * cifra; |==> <NO-OP>",
           "status": "KILLED"
         },
         {
           "id": "27",
           "operator": "STD",
-          "description": "27:STD:<ASSIGN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):13:327:rest /= 10; |==> <NO-OP>",
+          "description": "27:STD:<ASSIGN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):13:325:rest /= 10; |==> <NO-OP>",
           "status": "TIMED_OUT"
         },
         {
           "id": "28",
           "operator": "ROR",
-          "description": "28:ROR:==(int,int):<=(int,int):ro.tss.armstrong.Main@evaluate(int):15:361:suma == n |==> suma <= n",
+          "description": "28:ROR:==(int,int):<=(int,int):ro.tss.armstrong.Main@evaluate(int):15:359:suma == n |==> suma <= n",
           "status": "KILLED"
         },
         {
           "id": "29",
           "operator": "ROR",
-          "description": "29:ROR:==(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):15:361:suma == n |==> suma >= n",
+          "description": "29:ROR:==(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):15:359:suma == n |==> suma >= n",
           "status": "SURVIVED"
         },
         {
           "id": "30",
           "operator": "ROR",
-          "description": "30:ROR:==(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):15:366:suma == n |==> false",
+          "description": "30:ROR:==(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):15:364:suma == n |==> false",
           "status": "KILLED"
         },
         {
           "id": "31",
           "operator": "STD",
-          "description": "31:STD:<RETURN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):16:386:return \"DA\"; |==> <NO-OP>",
+          "description": "31:STD:<RETURN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):16:384:return \"DA\"; |==> <NO-OP>",
           "status": "KILLED"
         }
       ]
@@ -883,187 +883,187 @@
         {
           "id": "1",
           "operator": "ROR",
-          "description": "1:ROR:<(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):5:103:n < 100 |==> n != 100",
+          "description": "1:ROR:<(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):5:102:n < 100 |==> n != 100",
           "status": "KILLED"
         },
         {
           "id": "2",
           "operator": "ROR",
-          "description": "2:ROR:<(int,int):<=(int,int):ro.tss.armstrong.Main@evaluate(int):5:103:n < 100 |==> n <= 100",
+          "description": "2:ROR:<(int,int):<=(int,int):ro.tss.armstrong.Main@evaluate(int):5:102:n < 100 |==> n <= 100",
           "status": "KILLED"
         },
         {
           "id": "3",
           "operator": "ROR",
-          "description": "3:ROR:<(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):5:105:n < 100 |==> false",
+          "description": "3:ROR:<(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):5:104:n < 100 |==> false",
           "status": "KILLED"
         },
         {
           "id": "4",
           "operator": "ROR",
-          "description": "4:ROR:>(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):5:114:n > 999 |==> n != 999",
+          "description": "4:ROR:>(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):5:113:n > 999 |==> n != 999",
           "status": "KILLED"
         },
         {
           "id": "5",
           "operator": "ROR",
-          "description": "5:ROR:>(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):5:114:n > 999 |==> n >= 999",
+          "description": "5:ROR:>(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):5:113:n > 999 |==> n >= 999",
           "status": "KILLED"
         },
         {
           "id": "6",
           "operator": "ROR",
-          "description": "6:ROR:>(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):5:116:n > 999 |==> false",
+          "description": "6:ROR:>(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):5:115:n > 999 |==> false",
           "status": "KILLED"
         },
         {
           "id": "7",
           "operator": "COR",
-          "description": "7:COR:||(boolean,boolean):LHS(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:103:n < 100 || n > 999 |==> n < 100",
+          "description": "7:COR:||(boolean,boolean):LHS(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:102:n < 100 || n > 999 |==> n < 100",
           "status": "KILLED"
         },
         {
           "id": "8",
           "operator": "COR",
-          "description": "8:COR:||(boolean,boolean):RHS(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:114:n < 100 || n > 999 |==> n > 999",
+          "description": "8:COR:||(boolean,boolean):RHS(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:113:n < 100 || n > 999 |==> n > 999",
           "status": "KILLED"
         },
         {
           "id": "9",
           "operator": "COR",
-          "description": "9:COR:||(boolean,boolean):TRUE(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:111:n < 100 || n > 999 |==> true",
+          "description": "9:COR:||(boolean,boolean):TRUE(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:110:n < 100 || n > 999 |==> true",
           "status": "KILLED"
         },
         {
           "id": "10",
           "operator": "STD",
-          "description": "10:STD:<RETURN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):6:138:return \"INVALID\"; |==> <NO-OP>",
+          "description": "10:STD:<RETURN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):6:136:return \"INVALID\"; |==> <NO-OP>",
           "status": "KILLED"
         },
         {
           "id": "11",
           "operator": "ROR",
-          "description": "11:ROR:>(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):10:225:rest > 0 |==> rest != 0",
+          "description": "11:ROR:>(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):10:223:rest > 0 |==> rest != 0",
           "status": "SURVIVED"
         },
         {
           "id": "12",
           "operator": "ROR",
-          "description": "12:ROR:>(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):10:225:rest > 0 |==> rest >= 0",
+          "description": "12:ROR:>(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):10:223:rest > 0 |==> rest >= 0",
           "status": "TIMED_OUT"
         },
         {
           "id": "13",
           "operator": "ROR",
-          "description": "13:ROR:>(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):10:230:rest > 0 |==> false",
+          "description": "13:ROR:>(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):10:228:rest > 0 |==> false",
           "status": "KILLED"
         },
         {
           "id": "14",
           "operator": "AOR",
-          "description": "14:AOR:%(int,int):*(int,int):ro.tss.armstrong.Main@evaluate(int):11:261:rest % 10 |==> rest * 10",
+          "description": "14:AOR:%(int,int):*(int,int):ro.tss.armstrong.Main@evaluate(int):11:259:rest % 10 |==> rest * 10",
           "status": "KILLED"
         },
         {
           "id": "15",
           "operator": "AOR",
-          "description": "15:AOR:%(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):11:261:rest % 10 |==> rest + 10",
+          "description": "15:AOR:%(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):11:259:rest % 10 |==> rest + 10",
           "status": "KILLED"
         },
         {
           "id": "16",
           "operator": "AOR",
-          "description": "16:AOR:%(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):11:261:rest % 10 |==> rest - 10",
+          "description": "16:AOR:%(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):11:259:rest % 10 |==> rest - 10",
           "status": "KILLED"
         },
         {
           "id": "17",
           "operator": "AOR",
-          "description": "17:AOR:%(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):11:261:rest % 10 |==> rest / 10",
+          "description": "17:AOR:%(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):11:259:rest % 10 |==> rest / 10",
           "status": "KILLED"
         },
         {
           "id": "18",
           "operator": "AOR",
-          "description": "18:AOR:*(int,int):%(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra |==> cifra % cifra",
+          "description": "18:AOR:*(int,int):%(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra |==> cifra % cifra",
           "status": "KILLED_EXCEPTION"
         },
         {
           "id": "19",
           "operator": "AOR",
-          "description": "19:AOR:*(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra |==> cifra + cifra",
+          "description": "19:AOR:*(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra |==> cifra + cifra",
           "status": "KILLED"
         },
         {
           "id": "20",
           "operator": "AOR",
-          "description": "20:AOR:*(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra |==> cifra - cifra",
+          "description": "20:AOR:*(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra |==> cifra - cifra",
           "status": "KILLED"
         },
         {
           "id": "21",
           "operator": "AOR",
-          "description": "21:AOR:*(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra |==> cifra / cifra",
+          "description": "21:AOR:*(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra |==> cifra / cifra",
           "status": "KILLED_EXCEPTION"
         },
         {
           "id": "22",
           "operator": "AOR",
-          "description": "22:AOR:*(int,int):%(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra * cifra |==> cifra * cifra % cifra",
+          "description": "22:AOR:*(int,int):%(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra * cifra |==> cifra * cifra % cifra",
           "status": "KILLED_EXCEPTION"
         },
         {
           "id": "23",
           "operator": "AOR",
-          "description": "23:AOR:*(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra * cifra |==> cifra * cifra + cifra",
+          "description": "23:AOR:*(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra * cifra |==> cifra * cifra + cifra",
           "status": "KILLED"
         },
         {
           "id": "24",
           "operator": "AOR",
-          "description": "24:AOR:*(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra * cifra |==> cifra * cifra - cifra",
+          "description": "24:AOR:*(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra * cifra |==> cifra * cifra - cifra",
           "status": "KILLED"
         },
         {
           "id": "25",
           "operator": "AOR",
-          "description": "25:AOR:*(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra * cifra |==> cifra * cifra / cifra",
+          "description": "25:AOR:*(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra * cifra |==> cifra * cifra / cifra",
           "status": "KILLED_EXCEPTION"
         },
         {
           "id": "26",
           "operator": "STD",
-          "description": "26:STD:<ASSIGN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):12:284:suma += cifra * cifra * cifra; |==> <NO-OP>",
+          "description": "26:STD:<ASSIGN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):12:282:suma += cifra * cifra * cifra; |==> <NO-OP>",
           "status": "KILLED"
         },
         {
           "id": "27",
           "operator": "STD",
-          "description": "27:STD:<ASSIGN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):13:327:rest /= 10; |==> <NO-OP>",
+          "description": "27:STD:<ASSIGN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):13:325:rest /= 10; |==> <NO-OP>",
           "status": "TIMED_OUT"
         },
         {
           "id": "28",
           "operator": "ROR",
-          "description": "28:ROR:==(int,int):<=(int,int):ro.tss.armstrong.Main@evaluate(int):15:361:suma == n |==> suma <= n",
+          "description": "28:ROR:==(int,int):<=(int,int):ro.tss.armstrong.Main@evaluate(int):15:359:suma == n |==> suma <= n",
           "status": "KILLED"
         },
         {
           "id": "29",
           "operator": "ROR",
-          "description": "29:ROR:==(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):15:361:suma == n |==> suma >= n",
+          "description": "29:ROR:==(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):15:359:suma == n |==> suma >= n",
           "status": "KILLED"
         },
         {
           "id": "30",
           "operator": "ROR",
-          "description": "30:ROR:==(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):15:366:suma == n |==> false",
+          "description": "30:ROR:==(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):15:364:suma == n |==> false",
           "status": "KILLED"
         },
         {
           "id": "31",
           "operator": "STD",
-          "description": "31:STD:<RETURN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):16:386:return \"DA\"; |==> <NO-OP>",
+          "description": "31:STD:<RETURN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):16:384:return \"DA\"; |==> <NO-OP>",
           "status": "KILLED"
         }
       ]
@@ -1084,187 +1084,187 @@
         {
           "id": "1",
           "operator": "ROR",
-          "description": "1:ROR:<(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):5:103:n < 100 |==> n != 100",
+          "description": "1:ROR:<(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):5:102:n < 100 |==> n != 100",
           "status": "KILLED"
         },
         {
           "id": "2",
           "operator": "ROR",
-          "description": "2:ROR:<(int,int):<=(int,int):ro.tss.armstrong.Main@evaluate(int):5:103:n < 100 |==> n <= 100",
+          "description": "2:ROR:<(int,int):<=(int,int):ro.tss.armstrong.Main@evaluate(int):5:102:n < 100 |==> n <= 100",
           "status": "KILLED"
         },
         {
           "id": "3",
           "operator": "ROR",
-          "description": "3:ROR:<(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):5:105:n < 100 |==> false",
+          "description": "3:ROR:<(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):5:104:n < 100 |==> false",
           "status": "KILLED"
         },
         {
           "id": "4",
           "operator": "ROR",
-          "description": "4:ROR:>(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):5:114:n > 999 |==> n != 999",
+          "description": "4:ROR:>(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):5:113:n > 999 |==> n != 999",
           "status": "KILLED"
         },
         {
           "id": "5",
           "operator": "ROR",
-          "description": "5:ROR:>(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):5:114:n > 999 |==> n >= 999",
+          "description": "5:ROR:>(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):5:113:n > 999 |==> n >= 999",
           "status": "SURVIVED"
         },
         {
           "id": "6",
           "operator": "ROR",
-          "description": "6:ROR:>(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):5:116:n > 999 |==> false",
+          "description": "6:ROR:>(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):5:115:n > 999 |==> false",
           "status": "SURVIVED"
         },
         {
           "id": "7",
           "operator": "COR",
-          "description": "7:COR:||(boolean,boolean):LHS(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:103:n < 100 || n > 999 |==> n < 100",
+          "description": "7:COR:||(boolean,boolean):LHS(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:102:n < 100 || n > 999 |==> n < 100",
           "status": "SURVIVED"
         },
         {
           "id": "8",
           "operator": "COR",
-          "description": "8:COR:||(boolean,boolean):RHS(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:114:n < 100 || n > 999 |==> n > 999",
+          "description": "8:COR:||(boolean,boolean):RHS(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:113:n < 100 || n > 999 |==> n > 999",
           "status": "KILLED"
         },
         {
           "id": "9",
           "operator": "COR",
-          "description": "9:COR:||(boolean,boolean):TRUE(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:111:n < 100 || n > 999 |==> true",
+          "description": "9:COR:||(boolean,boolean):TRUE(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:110:n < 100 || n > 999 |==> true",
           "status": "KILLED"
         },
         {
           "id": "10",
           "operator": "STD",
-          "description": "10:STD:<RETURN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):6:138:return \"INVALID\"; |==> <NO-OP>",
+          "description": "10:STD:<RETURN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):6:136:return \"INVALID\"; |==> <NO-OP>",
           "status": "KILLED"
         },
         {
           "id": "11",
           "operator": "ROR",
-          "description": "11:ROR:>(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):10:225:rest > 0 |==> rest != 0",
+          "description": "11:ROR:>(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):10:223:rest > 0 |==> rest != 0",
           "status": "SURVIVED"
         },
         {
           "id": "12",
           "operator": "ROR",
-          "description": "12:ROR:>(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):10:225:rest > 0 |==> rest >= 0",
+          "description": "12:ROR:>(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):10:223:rest > 0 |==> rest >= 0",
           "status": "TIMED_OUT"
         },
         {
           "id": "13",
           "operator": "ROR",
-          "description": "13:ROR:>(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):10:230:rest > 0 |==> false",
+          "description": "13:ROR:>(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):10:228:rest > 0 |==> false",
           "status": "KILLED"
         },
         {
           "id": "14",
           "operator": "AOR",
-          "description": "14:AOR:%(int,int):*(int,int):ro.tss.armstrong.Main@evaluate(int):11:261:rest % 10 |==> rest * 10",
+          "description": "14:AOR:%(int,int):*(int,int):ro.tss.armstrong.Main@evaluate(int):11:259:rest % 10 |==> rest * 10",
           "status": "KILLED"
         },
         {
           "id": "15",
           "operator": "AOR",
-          "description": "15:AOR:%(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):11:261:rest % 10 |==> rest + 10",
+          "description": "15:AOR:%(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):11:259:rest % 10 |==> rest + 10",
           "status": "KILLED"
         },
         {
           "id": "16",
           "operator": "AOR",
-          "description": "16:AOR:%(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):11:261:rest % 10 |==> rest - 10",
+          "description": "16:AOR:%(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):11:259:rest % 10 |==> rest - 10",
           "status": "KILLED"
         },
         {
           "id": "17",
           "operator": "AOR",
-          "description": "17:AOR:%(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):11:261:rest % 10 |==> rest / 10",
+          "description": "17:AOR:%(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):11:259:rest % 10 |==> rest / 10",
           "status": "KILLED"
         },
         {
           "id": "18",
           "operator": "AOR",
-          "description": "18:AOR:*(int,int):%(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra |==> cifra % cifra",
+          "description": "18:AOR:*(int,int):%(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra |==> cifra % cifra",
           "status": "KILLED_EXCEPTION"
         },
         {
           "id": "19",
           "operator": "AOR",
-          "description": "19:AOR:*(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra |==> cifra + cifra",
+          "description": "19:AOR:*(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra |==> cifra + cifra",
           "status": "KILLED"
         },
         {
           "id": "20",
           "operator": "AOR",
-          "description": "20:AOR:*(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra |==> cifra - cifra",
+          "description": "20:AOR:*(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra |==> cifra - cifra",
           "status": "KILLED"
         },
         {
           "id": "21",
           "operator": "AOR",
-          "description": "21:AOR:*(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra |==> cifra / cifra",
+          "description": "21:AOR:*(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra |==> cifra / cifra",
           "status": "KILLED_EXCEPTION"
         },
         {
           "id": "22",
           "operator": "AOR",
-          "description": "22:AOR:*(int,int):%(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra * cifra |==> cifra * cifra % cifra",
+          "description": "22:AOR:*(int,int):%(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra * cifra |==> cifra * cifra % cifra",
           "status": "KILLED_EXCEPTION"
         },
         {
           "id": "23",
           "operator": "AOR",
-          "description": "23:AOR:*(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra * cifra |==> cifra * cifra + cifra",
+          "description": "23:AOR:*(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra * cifra |==> cifra * cifra + cifra",
           "status": "KILLED"
         },
         {
           "id": "24",
           "operator": "AOR",
-          "description": "24:AOR:*(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra * cifra |==> cifra * cifra - cifra",
+          "description": "24:AOR:*(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra * cifra |==> cifra * cifra - cifra",
           "status": "KILLED"
         },
         {
           "id": "25",
           "operator": "AOR",
-          "description": "25:AOR:*(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra * cifra |==> cifra * cifra / cifra",
+          "description": "25:AOR:*(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra * cifra |==> cifra * cifra / cifra",
           "status": "KILLED_EXCEPTION"
         },
         {
           "id": "26",
           "operator": "STD",
-          "description": "26:STD:<ASSIGN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):12:284:suma += cifra * cifra * cifra; |==> <NO-OP>",
+          "description": "26:STD:<ASSIGN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):12:282:suma += cifra * cifra * cifra; |==> <NO-OP>",
           "status": "KILLED"
         },
         {
           "id": "27",
           "operator": "STD",
-          "description": "27:STD:<ASSIGN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):13:327:rest /= 10; |==> <NO-OP>",
+          "description": "27:STD:<ASSIGN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):13:325:rest /= 10; |==> <NO-OP>",
           "status": "TIMED_OUT"
         },
         {
           "id": "28",
           "operator": "ROR",
-          "description": "28:ROR:==(int,int):<=(int,int):ro.tss.armstrong.Main@evaluate(int):15:361:suma == n |==> suma <= n",
+          "description": "28:ROR:==(int,int):<=(int,int):ro.tss.armstrong.Main@evaluate(int):15:359:suma == n |==> suma <= n",
           "status": "KILLED"
         },
         {
           "id": "29",
           "operator": "ROR",
-          "description": "29:ROR:==(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):15:361:suma == n |==> suma >= n",
+          "description": "29:ROR:==(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):15:359:suma == n |==> suma >= n",
           "status": "SURVIVED"
         },
         {
           "id": "30",
           "operator": "ROR",
-          "description": "30:ROR:==(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):15:366:suma == n |==> false",
+          "description": "30:ROR:==(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):15:364:suma == n |==> false",
           "status": "KILLED"
         },
         {
           "id": "31",
           "operator": "STD",
-          "description": "31:STD:<RETURN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):16:386:return \"DA\"; |==> <NO-OP>",
+          "description": "31:STD:<RETURN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):16:384:return \"DA\"; |==> <NO-OP>",
           "status": "KILLED"
         }
       ]
@@ -1285,187 +1285,187 @@
         {
           "id": "1",
           "operator": "ROR",
-          "description": "1:ROR:<(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):5:103:n < 100 |==> n != 100",
+          "description": "1:ROR:<(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):5:102:n < 100 |==> n != 100",
           "status": "KILLED"
         },
         {
           "id": "2",
           "operator": "ROR",
-          "description": "2:ROR:<(int,int):<=(int,int):ro.tss.armstrong.Main@evaluate(int):5:103:n < 100 |==> n <= 100",
+          "description": "2:ROR:<(int,int):<=(int,int):ro.tss.armstrong.Main@evaluate(int):5:102:n < 100 |==> n <= 100",
           "status": "KILLED"
         },
         {
           "id": "3",
           "operator": "ROR",
-          "description": "3:ROR:<(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):5:105:n < 100 |==> false",
+          "description": "3:ROR:<(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):5:104:n < 100 |==> false",
           "status": "KILLED"
         },
         {
           "id": "4",
           "operator": "ROR",
-          "description": "4:ROR:>(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):5:114:n > 999 |==> n != 999",
+          "description": "4:ROR:>(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):5:113:n > 999 |==> n != 999",
           "status": "KILLED"
         },
         {
           "id": "5",
           "operator": "ROR",
-          "description": "5:ROR:>(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):5:114:n > 999 |==> n >= 999",
+          "description": "5:ROR:>(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):5:113:n > 999 |==> n >= 999",
           "status": "SURVIVED"
         },
         {
           "id": "6",
           "operator": "ROR",
-          "description": "6:ROR:>(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):5:116:n > 999 |==> false",
+          "description": "6:ROR:>(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):5:115:n > 999 |==> false",
           "status": "KILLED"
         },
         {
           "id": "7",
           "operator": "COR",
-          "description": "7:COR:||(boolean,boolean):LHS(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:103:n < 100 || n > 999 |==> n < 100",
+          "description": "7:COR:||(boolean,boolean):LHS(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:102:n < 100 || n > 999 |==> n < 100",
           "status": "KILLED"
         },
         {
           "id": "8",
           "operator": "COR",
-          "description": "8:COR:||(boolean,boolean):RHS(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:114:n < 100 || n > 999 |==> n > 999",
+          "description": "8:COR:||(boolean,boolean):RHS(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:113:n < 100 || n > 999 |==> n > 999",
           "status": "KILLED"
         },
         {
           "id": "9",
           "operator": "COR",
-          "description": "9:COR:||(boolean,boolean):TRUE(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:111:n < 100 || n > 999 |==> true",
+          "description": "9:COR:||(boolean,boolean):TRUE(boolean,boolean):ro.tss.armstrong.Main@evaluate(int):5:110:n < 100 || n > 999 |==> true",
           "status": "KILLED"
         },
         {
           "id": "10",
           "operator": "STD",
-          "description": "10:STD:<RETURN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):6:138:return \"INVALID\"; |==> <NO-OP>",
+          "description": "10:STD:<RETURN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):6:136:return \"INVALID\"; |==> <NO-OP>",
           "status": "KILLED"
         },
         {
           "id": "11",
           "operator": "ROR",
-          "description": "11:ROR:>(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):10:225:rest > 0 |==> rest != 0",
+          "description": "11:ROR:>(int,int):!=(int,int):ro.tss.armstrong.Main@evaluate(int):10:223:rest > 0 |==> rest != 0",
           "status": "SURVIVED"
         },
         {
           "id": "12",
           "operator": "ROR",
-          "description": "12:ROR:>(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):10:225:rest > 0 |==> rest >= 0",
+          "description": "12:ROR:>(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):10:223:rest > 0 |==> rest >= 0",
           "status": "TIMED_OUT"
         },
         {
           "id": "13",
           "operator": "ROR",
-          "description": "13:ROR:>(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):10:230:rest > 0 |==> false",
+          "description": "13:ROR:>(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):10:228:rest > 0 |==> false",
           "status": "KILLED"
         },
         {
           "id": "14",
           "operator": "AOR",
-          "description": "14:AOR:%(int,int):*(int,int):ro.tss.armstrong.Main@evaluate(int):11:261:rest % 10 |==> rest * 10",
+          "description": "14:AOR:%(int,int):*(int,int):ro.tss.armstrong.Main@evaluate(int):11:259:rest % 10 |==> rest * 10",
           "status": "KILLED"
         },
         {
           "id": "15",
           "operator": "AOR",
-          "description": "15:AOR:%(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):11:261:rest % 10 |==> rest + 10",
+          "description": "15:AOR:%(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):11:259:rest % 10 |==> rest + 10",
           "status": "KILLED"
         },
         {
           "id": "16",
           "operator": "AOR",
-          "description": "16:AOR:%(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):11:261:rest % 10 |==> rest - 10",
+          "description": "16:AOR:%(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):11:259:rest % 10 |==> rest - 10",
           "status": "KILLED"
         },
         {
           "id": "17",
           "operator": "AOR",
-          "description": "17:AOR:%(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):11:261:rest % 10 |==> rest / 10",
+          "description": "17:AOR:%(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):11:259:rest % 10 |==> rest / 10",
           "status": "KILLED"
         },
         {
           "id": "18",
           "operator": "AOR",
-          "description": "18:AOR:*(int,int):%(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra |==> cifra % cifra",
+          "description": "18:AOR:*(int,int):%(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra |==> cifra % cifra",
           "status": "KILLED_EXCEPTION"
         },
         {
           "id": "19",
           "operator": "AOR",
-          "description": "19:AOR:*(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra |==> cifra + cifra",
+          "description": "19:AOR:*(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra |==> cifra + cifra",
           "status": "KILLED"
         },
         {
           "id": "20",
           "operator": "AOR",
-          "description": "20:AOR:*(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra |==> cifra - cifra",
+          "description": "20:AOR:*(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra |==> cifra - cifra",
           "status": "KILLED"
         },
         {
           "id": "21",
           "operator": "AOR",
-          "description": "21:AOR:*(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra |==> cifra / cifra",
+          "description": "21:AOR:*(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra |==> cifra / cifra",
           "status": "KILLED_EXCEPTION"
         },
         {
           "id": "22",
           "operator": "AOR",
-          "description": "22:AOR:*(int,int):%(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra * cifra |==> cifra * cifra % cifra",
+          "description": "22:AOR:*(int,int):%(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra * cifra |==> cifra * cifra % cifra",
           "status": "KILLED_EXCEPTION"
         },
         {
           "id": "23",
           "operator": "AOR",
-          "description": "23:AOR:*(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra * cifra |==> cifra * cifra + cifra",
+          "description": "23:AOR:*(int,int):+(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra * cifra |==> cifra * cifra + cifra",
           "status": "KILLED"
         },
         {
           "id": "24",
           "operator": "AOR",
-          "description": "24:AOR:*(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra * cifra |==> cifra * cifra - cifra",
+          "description": "24:AOR:*(int,int):-(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra * cifra |==> cifra * cifra - cifra",
           "status": "KILLED"
         },
         {
           "id": "25",
           "operator": "AOR",
-          "description": "25:AOR:*(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):12:292:cifra * cifra * cifra |==> cifra * cifra / cifra",
+          "description": "25:AOR:*(int,int):/(int,int):ro.tss.armstrong.Main@evaluate(int):12:290:cifra * cifra * cifra |==> cifra * cifra / cifra",
           "status": "KILLED_EXCEPTION"
         },
         {
           "id": "26",
           "operator": "STD",
-          "description": "26:STD:<ASSIGN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):12:284:suma += cifra * cifra * cifra; |==> <NO-OP>",
+          "description": "26:STD:<ASSIGN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):12:282:suma += cifra * cifra * cifra; |==> <NO-OP>",
           "status": "KILLED"
         },
         {
           "id": "27",
           "operator": "STD",
-          "description": "27:STD:<ASSIGN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):13:327:rest /= 10; |==> <NO-OP>",
+          "description": "27:STD:<ASSIGN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):13:325:rest /= 10; |==> <NO-OP>",
           "status": "TIMED_OUT"
         },
         {
           "id": "28",
           "operator": "ROR",
-          "description": "28:ROR:==(int,int):<=(int,int):ro.tss.armstrong.Main@evaluate(int):15:361:suma == n |==> suma <= n",
+          "description": "28:ROR:==(int,int):<=(int,int):ro.tss.armstrong.Main@evaluate(int):15:359:suma == n |==> suma <= n",
           "status": "KILLED"
         },
         {
           "id": "29",
           "operator": "ROR",
-          "description": "29:ROR:==(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):15:361:suma == n |==> suma >= n",
+          "description": "29:ROR:==(int,int):>=(int,int):ro.tss.armstrong.Main@evaluate(int):15:359:suma == n |==> suma >= n",
           "status": "SURVIVED"
         },
         {
           "id": "30",
           "operator": "ROR",
-          "description": "30:ROR:==(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):15:366:suma == n |==> false",
+          "description": "30:ROR:==(int,int):FALSE(int,int):ro.tss.armstrong.Main@evaluate(int):15:364:suma == n |==> false",
           "status": "KILLED"
         },
         {
           "id": "31",
           "operator": "STD",
-          "description": "31:STD:<RETURN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):16:386:return \"DA\"; |==> <NO-OP>",
+          "description": "31:STD:<RETURN>:<NO-OP>:ro.tss.armstrong.Main@evaluate(int):16:384:return \"DA\"; |==> <NO-OP>",
           "status": "KILLED"
         }
       ]
@@ -1480,13 +1480,13 @@
     "EQUIVALENT_11_CHECKS 906"
   ],
   "input_sha256": {
-    "src/main/java/ro/tss/armstrong/Main.java": "a50ddc6381806813b6012847b948bfee210cb3aa936323e316deb118a85fb4fd",
-    "rapoarte/major/mutants.log": "1d5d91436a54e97aca0115bf705168e46824770566f0d0216e1d2a48a6e04962",
-    "src/test/java/ro/tss/armstrong/BoundaryValueAnalysis.java": "32ed7b2e300265a26b2dc00352397414aa4726363040184c6f0eb5e32d0a17f9",
-    "src/test/java/ro/tss/armstrong/CauseEffectGraphing.java": "9e956421646959bb773109bee48ee7306490531c79fd3a03922e961ecdc15a45",
-    "src/test/java/ro/tss/armstrong/EquivalncePartitioning.java": "bda9052e47d65a2d95e6324c9c5724f4af3f2bd593090e7f9e5f1bb810e684b9",
+    "src/main/java/ro/tss/armstrong/Main.java": "5ad80008944ef512aeefc99a6a62b3d81be5c89a63544633f0eefcfe054098ca",
+    "rapoarte/major/mutants.log": "4c4b867186af2f9d8aafdbc0b4226d795b8c3f5cdf6fc1e3ac63b103b55651ce",
     "src/test/java/ro/tss/armstrong/ModifiedConditionDecisionCoverage.java": "ce8db005c8e42e117e57f95d021910d8111f11a381f6e6566531a0a6ae0fad3c",
-    "src/test/java/ro/tss/armstrong/RegressionTest.java": "023fc1761b919777326dc9032b9a39bd5e324a59bd9551f8b05af0621a0e580e",
+    "src/test/java/ro/tss/armstrong/EquivalncePartitioning.java": "4b7d2007aba56211aeed4734a4a00f18d5ec70b861bb9dfd65dac525671e66bf",
+    "src/test/java/ro/tss/armstrong/BoundaryValueAnalysis.java": "8e3393a8b132f1295cd41cd7b59e32fa2693873bcce94c40f6318495b7a3fe3b",
+    "src/test/java/ro/tss/armstrong/RegressionTest.java": "8e68fe26b0094362d4932a6e1d7b68cb3ebab823b9e57328bfc0b0dc6ba38f73",
+    "src/test/java/ro/tss/armstrong/CauseEffectGraphing.java": "75c39d23224961e5fb325c70a630617f492069e3a0e62476e59581922d3efc51",
     "scripts/MutationWitnessCheck.java": "30e9a5aafb4874a1c21d4ed66b761c3df957031530bd527b7edf71efe58f892e",
     "rapoarte/pit/EpTest/mutations.xml": "f019fe74e5074dc6dfef5b511ae60451382766768c0eacb3288d80d22fe49731",
     "rapoarte/major/EpTest/details.csv": "1cfc513b4bf44008e9b53fa02b17d4dd2f27d530843d47c31d581368f93b47f7",

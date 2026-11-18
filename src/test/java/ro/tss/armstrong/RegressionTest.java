@@ -1,8 +1,10 @@
 package ro.tss.armstrong;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+
 public class RegressionTest {
     @Test
     public void verificaMatriceaIndependenta() throws Exception {

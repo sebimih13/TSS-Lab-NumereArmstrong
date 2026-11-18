@@ -1,2 +1,2 @@
-$ /home/seb/Developer/TSS-Lab-Proiect/main/.tools/major/bin/major --mml /home/seb/Developer/TSS-Lab-Proiect/main/.tools/major/mml/all.mml.bin --release 11 -g -d /home/seb/Developer/TSS-Lab-NumereArmstrong/target/major-classes /home/seb/Developer/TSS-Lab-NumereArmstrong/src/main/java/ro/tss/armstrong/Main.java
-Generated 31 mutants (56 ms)
+$ /home/andrei/programming/tss-armstrong/.tools/major/bin/major --mml /home/andrei/programming/tss-armstrong/.tools/major/mml/all.mml.bin --release 11 -g -d /home/andrei/programming/tss-armstrong/target/major-classes /home/andrei/programming/tss-armstrong/src/main/java/ro/tss/armstrong/Main.java
+Generated 31 mutants (71 ms)

@@ -1,5 +1,5 @@
-$ /home/seb/Developer/TSS-Lab-Proiect/main/.tools/jdk11/jdk-11.0.32.1+1/bin/java -Xbootclasspath/a:/home/seb/Developer/TSS-Lab-Proiect/main/.tools/major/lib/major-rt.jar -jar /home/seb/Developer/TSS-Lab-Proiect/main/.tools/major/lib/ant/ant-launcher.jar -f /home/seb/Developer/TSS-Lab-NumereArmstrong/rapoarte/major/CegTest/build.xml
-Buildfile: /home/seb/Developer/TSS-Lab-NumereArmstrong/rapoarte/major/CegTest/build.xml
+$ /home/andrei/programming/tss-armstrong/.tools/jdk11/lib/openjdk/bin/java -Xbootclasspath/a:/home/andrei/programming/tss-armstrong/.tools/major/lib/major-rt.jar -jar /home/andrei/programming/tss-armstrong/.tools/major/lib/ant/ant-launcher.jar -f /home/andrei/programming/tss-armstrong/rapoarte/major/CegTest/build.xml
+Buildfile: /home/andrei/programming/tss-armstrong/rapoarte/major/CegTest/build.xml
 
 mutation:
     [junit] MAJOR: Mutation analysis enabled
@@ -20,13 +20,13 @@ mutation:
     [junit] MAJOR: ------------------------------------------------------------
     [junit] MAJOR: Run mutation analysis with 31 mutant(s) and 1 test(s).
     [junit] MAJOR: ------------------------------------------------------------
-    [junit] MAJOR: [1;34m1/1 - ro.tss.armstrong.CauseEffectGraphing (5ms / 31):[0m
-    [junit] MAJOR: 2259 (26 / 31 / 31) -> AVG-RTPM: 72ms
+    [junit] MAJOR: [1;34m1/1 - ro.tss.armstrong.CauseEffectGraphing (6ms / 31):[0m
+    [junit] MAJOR: 2301 (26 / 31 / 31) -> AVG-RTPM: 74ms
     [junit] MAJOR: Mutants killed (FAIL-EXC-TIME) / live: 26 (20-4-2) / 5
     [junit] MAJOR: ------------------------------------------------------------
     [junit] MAJOR: Summary:
     [junit] MAJOR: 
-    [junit] MAJOR: Analysis time                 : 2.26 seconds
+    [junit] MAJOR: Analysis time                 : 2.30 seconds
     [junit] MAJOR: Mutation score                : 83.87% (83.87%)
     [junit] MAJOR: Mutants killed (FAIL-EXC-TIME): 26 (20-4-2)
     [junit] MAJOR: Mutants live                  : 5

@@ -4,11 +4,12 @@
     "python@latest",
     "maven@latest",
     "jdk17@latest",
-    "texlive.combined.scheme-medium@latest"
+    "path:./nix/texlive"
   ],
   "shell": {
     "init_hook": [
-      "export TSS_TOOLS=\"${TSS_TOOLS:-$PWD/.tools}\""
+      "export TSS_TOOLS=\"${TSS_TOOLS:-$PWD/.tools}\"",
+      "export TSS_JDK11=\"${TSS_JDK11:-$TSS_TOOLS/jdk11/lib/openjdk}\""
     ],
     "scripts": {
       "setup:tools": [
@@ -24,6 +25,23 @@
         "devbox run setup:tools",
         "devbox run setup:jdk11",
         "devbox run setup:major"
+      ],
+      "prepare": [
+        "mvn generate-test-resources"
+      ],
+      "test": [
+        "mvn test"
+      ],
+      "run": [
+        "python3 scripts/run.py \"${1:-all}\""
+      ],
+      "validate": [
+        "python3 scripts/analiza_mutatiilor.py"
+      ],
+      "pdf": [
+        "pdflatex main.tex",
+        "latexmk -c main.tex",
+        "mv main.pdf Prezentare.pdf"
       ]
     }
   }

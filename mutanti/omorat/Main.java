@@ -2,7 +2,7 @@ package ro.tss.armstrong;
 
 public class Main {
     public static String evaluate(int n) {
-        if ((n <= 100 || n > 999)) {
+        if (n <= 100 || n > 999) {
             return "INVALID";
         }
         int rest = n;

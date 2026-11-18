@@ -26,38 +26,36 @@ JDK-urile, Maven și distribuția Major nu sunt instalate de `pom.xml`. Python e
 Uneltele binare nu sunt incluse în Git. Poți reutiliza instalarea existentă din proiectul inițial:
 
 ```bash
-export TSS_TOOLS=/home/seb/Developer/TSS-Lab-Proiect/main/.tools
-# Dacă vrei ca Maven să copieze JAR-urile în același director:
-mvn generate-test-resources -Dtools.directory="$TSS_TOOLS"
+devbox run setup
 ```
 
 ## Generare
 
 ```bash
 # Pregătirea JAR-urilor pentru scripturi (o singură dată).
-mvn generate-test-resources
+devbox run prepare
 
 # JUnit, JaCoCo, mutanți manuali, PIT, Major, rezumat și analiza mutațiilor.
-python3 scripts/run.py all
+devbox run run
 
 # Rulări separate.
-python3 scripts/run.py test
-python3 scripts/run.py coverage
-python3 scripts/run.py manual
-python3 scripts/run.py mutation
+devbox run run test
+devbox run run coverage
+devbox run run manual
+devbox run run mutation
 # Sunt disponibile și acțiunile pit și major.
 
 # Refacerea rezumatului din rapoartele deja generate.
-python3 scripts/run.py summary
+devbox run run summary
 
 # Validare PIT/Major, tabele LaTeX și martori Java.
-python3 scripts/analiza_mutatiilor.py
+devbox run validate
 
 # PDF, inclusiv graful TikZ și tabelele generate.
-latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
+devbox run pdf
 
 # Alternativă pentru testele și raportul JaCoCo prin Maven.
-mvn test
+devbox run test
 
 # Verificarea runnerului fără unelte Java.
 python3 -m unittest discover -s scripts -p 'test_*.py'
