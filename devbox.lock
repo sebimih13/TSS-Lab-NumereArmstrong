@@ -1,0 +1,178 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "github:NixOS/nixpkgs/nixpkgs-unstable": {
+      "last_modified": "2026-11-15T01:20:14Z",
+      "resolved": "github:NixOS/nixpkgs/1c872b8c508bbbfebc1b0b74777ff391ce0a574c?lastModified=1794705614&narHash=sha256-DZ5eNWHA6heAHwkMt1SBtF1p8Lfgi4ivqdqmgxUZkLs%3D"
+    },
+    "jdk17@latest": {
+      "last_modified": "2026-11-15T01:20:14Z",
+      "resolved": "github:NixOS/nixpkgs/1c872b8c508bbbfebc1b0b74777ff391ce0a574c#jdk17",
+      "source": "devbox-search",
+      "version": "17.0.21.0.3+1",
+      "systems": {
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/k755n01zhn97ds3302324my4xldlapad-openjdk-17.0.21.0.3+1",
+              "default": true
+            },
+            {
+              "name": "debug",
+              "path": "/nix/store/iidr4hlyfdsjdmkckv0f30vszxkk5zvc-openjdk-17.0.21.0.3+1-debug"
+            }
+          ],
+          "store_path": "/nix/store/k755n01zhn97ds3302324my4xldlapad-openjdk-17.0.21.0.3+1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/avqpx52zv42hm3sssdbrhkcwf8ifha0z-openjdk-17.0.21.0.3+1",
+              "default": true
+            },
+            {
+              "name": "debug",
+              "path": "/nix/store/y60c5ny0g897mqyy5866vri6k77pw154-openjdk-17.0.21.0.3+1-debug"
+            }
+          ],
+          "store_path": "/nix/store/avqpx52zv42hm3sssdbrhkcwf8ifha0z-openjdk-17.0.21.0.3+1"
+        }
+      }
+    },
+    "maven@latest": {
+      "last_modified": "2026-11-15T01:20:14Z",
+      "resolved": "github:NixOS/nixpkgs/1c872b8c508bbbfebc1b0b74777ff391ce0a574c#maven",
+      "source": "devbox-search",
+      "version": "3.10.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/d29l6kia7csy7ff6gg03zg5kaq59650f-maven-3.10.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/d29l6kia7csy7ff6gg03zg5kaq59650f-maven-3.10.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ys8jczxwg05yz22hr5vkb1vp06dfrwzp-maven-3.10.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/ys8jczxwg05yz22hr5vkb1vp06dfrwzp-maven-3.10.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/wqxsvf1famy3z5xkbbvkyc3p7zp8q410-maven-3.10.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/wqxsvf1famy3z5xkbbvkyc3p7zp8q410-maven-3.10.0"
+        }
+      }
+    },
+    "python@latest": {
+      "last_modified": "2026-11-15T01:20:14Z",
+      "plugin_version": "0.0.5",
+      "resolved": "github:NixOS/nixpkgs/1c872b8c508bbbfebc1b0b74777ff391ce0a574c#python315",
+      "source": "devbox-search",
+      "version": "3.15.2",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/6bf30g6pgw4s33xf1kdfbsq2hpnfv7vj-python3-3.15.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/6bf30g6pgw4s33xf1kdfbsq2hpnfv7vj-python3-3.15.2"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/62mj2nsnwlfm9yhdkryhhqz4wsfjp0va-python3-3.15.2",
+              "default": true
+            },
+            {
+              "name": "debug",
+              "path": "/nix/store/0kbkww1kl9ldadn78rw0hb7bn5kn3yij-python3-3.15.2-debug"
+            }
+          ],
+          "store_path": "/nix/store/62mj2nsnwlfm9yhdkryhhqz4wsfjp0va-python3-3.15.2"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/w3ps4vf470m69d9l5bcbbipay9insx32-python3-3.15.2",
+              "default": true
+            },
+            {
+              "name": "debug",
+              "path": "/nix/store/minlirmhz2rkv09gwf5bvwfawjkdr2vn-python3-3.15.2-debug"
+            }
+          ],
+          "store_path": "/nix/store/w3ps4vf470m69d9l5bcbbipay9insx32-python3-3.15.2"
+        }
+      }
+    },
+    "texlive.combined.scheme-medium@latest": {
+      "last_modified": "2023-04-28T21:17:46Z",
+      "resolved": "github:NixOS/nixpkgs/358a179550508bf2dafdf1657a94b7f65d91c4bf#texlive.combined.scheme-medium",
+      "source": "devbox-search",
+      "version": "2022.20221227",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0fsrn0qr6q4jyyj9ii0k3x5pzyz1v867-texlive-combined-medium-2022.20221227",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/0fsrn0qr6q4jyyj9ii0k3x5pzyz1v867-texlive-combined-medium-2022.20221227"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/psw1h2hf1f0ybb41q7n4ajd0maslsimj-texlive-combined-medium-2022.20221227",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/psw1h2hf1f0ybb41q7n4ajd0maslsimj-texlive-combined-medium-2022.20221227"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/k82cp0vayiymp5pbap4kb2wz0fqps0xi-texlive-combined-medium-2022.20221227",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/k82cp0vayiymp5pbap4kb2wz0fqps0xi-texlive-combined-medium-2022.20221227"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/07n0gn8gjfp5a64q9d4kmaqhr89ird4g-texlive-combined-medium-2022.20221227",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/07n0gn8gjfp5a64q9d4kmaqhr89ird4g-texlive-combined-medium-2022.20221227"
+        }
+      }
+    }
+  }
+}

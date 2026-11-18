@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.18.4/.schema/devbox.schema.json",
+  "packages": [
+    "python@latest",
+    "maven@latest",
+    "jdk17@latest",
+    "texlive.combined.scheme-medium@latest"
+  ],
+  "shell": {
+    "init_hook": [
+      "export TSS_TOOLS=\"${TSS_TOOLS:-$PWD/.tools}\""
+    ],
+    "scripts": {
+      "setup:tools": [
+        "mvn -q -Ptools validate -Dtss.tools=\"$TSS_TOOLS\""
+      ],
+      "setup:major": [
+        "mvn -q -Pmajor-setup validate"
+      ],
+      "setup:jdk11": [
+        "nix build --extra-experimental-features 'nix-command flakes' nixpkgs#jdk11 -o \"$TSS_TOOLS/jdk11\""
+      ],
+      "setup": [
+        "devbox run setup:tools",
+        "devbox run setup:jdk11",
+        "devbox run setup:major"
+      ]
+    }
+  }
+}
